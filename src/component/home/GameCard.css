@@ -1,0 +1,31 @@
+
+.smallTitle{
+    color: red;
+    text-align: right;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.title{
+    color: rgb(43, 43, 138);
+    font-size: 16px;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.player{
+    color: black;
+    font-size: 15px;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.info{
+    color: gray;
+    font-size: 15px;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}

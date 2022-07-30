@@ -1,0 +1,3996 @@
+{
+    "generated_at": "2022-07-29T16:34:56+00:00",
+    "summaries": [
+        {
+        "sport_event": {
+            "id": "sr:sport_event:35034841",
+            "start_time": "2022-07-29T13:35:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:785",
+                    "name": "ITF Men"
+                },
+                "competition": {
+                    "id": "sr:competition:34812",
+                    "name": "ITF Denmark F1, Men Singles",
+                    "parent_id": "sr:competition:34810",
+                    "type": "singles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:95613",
+                    "name": "ITF Denmark F1, Men Singles 2022",
+                    "start_date": "2022-07-24",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:34812"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135155",
+                    "name": "2022 Denmark F1, Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:226124",
+                "name": "Holmgren, August",
+                "country": "Denmark",
+                "country_code": "DNK",
+                "abbreviation": "HOL",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:17065",
+                "name": "Chazal, Maxime",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "CHA",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:59400",
+                "name": "Court 1",
+                "city_name": "Vejle",
+                "country_name": "Denmark",
+                "country_code": "DNK"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "3rd_set",
+            "home_score": 1,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 6,
+                "away_score": 3,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 6,
+                "away_score": 7,
+                "type": "set",
+                "number": 2,
+                "home_tiebreak_score": 5,
+                "away_tiebreak_score": 7
+            }, {
+                "home_score": 2,
+                "away_score": 1,
+                "type": "set",
+                "number": 3
+            }],
+            "game_state": {
+                "home_score": 40,
+                "away_score": 30,
+                "serving": "away",
+                "last_point_result": "double_fault",
+                "tie_break": false,
+                "point_type": "break"
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:226124",
+                    "name": "Holmgren, August",
+                    "abbreviation": "HOL",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 7,
+                        "breakpoints_won": 1,
+                        "double_faults": 4,
+                        "first_serve_points_won": 40,
+                        "first_serve_successful": 50,
+                        "games_won": 14,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 6,
+                        "points_won": 96,
+                        "second_serve_points_won": 20,
+                        "second_serve_successful": 29,
+                        "service_games_won": 13,
+                        "service_points_lost": 23,
+                        "service_points_won": 60,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 11
+                    }
+                }, {
+                    "id": "sr:competitor:17065",
+                    "name": "Chazal, Maxime",
+                    "abbreviation": "CHA",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 2,
+                        "breakpoints_won": 0,
+                        "double_faults": 3,
+                        "first_serve_points_won": 47,
+                        "first_serve_successful": 66,
+                        "games_won": 11,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 4,
+                        "points_won": 84,
+                        "second_serve_points_won": 14,
+                        "second_serve_successful": 28,
+                        "service_games_won": 10,
+                        "service_points_lost": 36,
+                        "service_points_won": 61,
+                        "tiebreaks_won": 1,
+                        "total_breakpoints": 4
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34859225",
+            "start_time": "2022-07-29T13:40:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:6",
+                    "name": "WTA"
+                },
+                "competition": {
+                    "id": "sr:competition:2907",
+                    "name": "WTA Prague, Czech Republic Women Singles",
+                    "parent_id": "sr:competition:2905",
+                    "type": "singles",
+                    "gender": "women",
+                    "level": "wta_250"
+                },
+                "season": {
+                    "id": "sr:season:91489",
+                    "name": "WTA Prague, Czech Republic Women Singles 2022",
+                    "start_date": "2022-07-23",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2907"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:129563",
+                    "name": "2022 Prague, Czech Republic"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:42289",
+                "name": "Linette, Magda",
+                "country": "Poland",
+                "country_code": "POL",
+                "abbreviation": "LIN",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:45846",
+                "name": "Wang, Qiang",
+                "country": "China",
+                "country_code": "CHN",
+                "abbreviation": "WAN",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:14200",
+                "name": "Center Court",
+                "city_name": "Prague",
+                "country_name": "Czech Republic",
+                "country_code": "CZE"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "3rd_set",
+            "home_score": 1,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 5,
+                "away_score": 7,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 7,
+                "away_score": 6,
+                "type": "set",
+                "number": 2,
+                "home_tiebreak_score": 7,
+                "away_tiebreak_score": 5
+            }, {
+                "home_score": 4,
+                "away_score": 3,
+                "type": "set",
+                "number": 3
+            }],
+            "game_state": {
+                "home_score": 15,
+                "away_score": 15,
+                "serving": "home",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:42289",
+                    "name": "Linette, Magda",
+                    "abbreviation": "LIN",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 6,
+                        "double_faults": 1,
+                        "first_serve_points_won": 47,
+                        "first_serve_successful": 68,
+                        "games_won": 16,
+                        "max_games_in_a_row": 4,
+                        "max_points_in_a_row": 12,
+                        "points_won": 116,
+                        "second_serve_points_won": 12,
+                        "second_serve_successful": 30,
+                        "service_games_won": 9,
+                        "service_points_lost": 40,
+                        "service_points_won": 59,
+                        "tiebreaks_won": 1,
+                        "total_breakpoints": 18
+                    }
+                }, {
+                    "id": "sr:competitor:45846",
+                    "name": "Wang, Qiang",
+                    "abbreviation": "WAN",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 4,
+                        "breakpoints_won": 6,
+                        "double_faults": 6,
+                        "first_serve_points_won": 42,
+                        "first_serve_successful": 72,
+                        "games_won": 16,
+                        "max_games_in_a_row": 5,
+                        "max_points_in_a_row": 7,
+                        "points_won": 109,
+                        "second_serve_points_won": 27,
+                        "second_serve_successful": 48,
+                        "service_games_won": 10,
+                        "service_points_lost": 57,
+                        "service_points_won": 69,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 12
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35028521",
+            "start_time": "2022-07-29T13:45:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:785",
+                    "name": "ITF Men"
+                },
+                "competition": {
+                    "id": "sr:competition:18172",
+                    "name": "ITF Romania F2, Men Singles",
+                    "parent_id": "sr:competition:18170",
+                    "type": "singles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:95587",
+                    "name": "ITF Romania F2, Men Singles 2022",
+                    "start_date": "2022-07-24",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:18172"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135119",
+                    "name": "2022 Romania F2, Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:153826",
+                "name": "Echargui, Moez",
+                "country": "Tunisia",
+                "country_code": "TUN",
+                "abbreviation": "ECH",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:160020",
+                "name": "Dancu, Vlad Andrei",
+                "country": "Romania",
+                "country_code": "ROU",
+                "abbreviation": "DAN",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:39665",
+                "name": "Indoor",
+                "city_name": "Bacau",
+                "country_name": "Romania",
+                "country_code": "ROU"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "3rd_set",
+            "home_score": 1,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 3,
+                "away_score": 6,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 6,
+                "away_score": 3,
+                "type": "set",
+                "number": 2
+            }, {
+                "home_score": 6,
+                "away_score": 5,
+                "type": "set",
+                "number": 3
+            }],
+            "game_state": {
+                "home_score": 0,
+                "away_score": 0,
+                "serving": "home",
+                "last_point_result": "server_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:153826",
+                    "name": "Echargui, Moez",
+                    "abbreviation": "ECH",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 9,
+                        "breakpoints_won": 4,
+                        "double_faults": 4,
+                        "first_serve_points_won": 44,
+                        "first_serve_successful": 59,
+                        "games_won": 15,
+                        "max_games_in_a_row": 5,
+                        "max_points_in_a_row": 10,
+                        "points_won": 91,
+                        "second_serve_points_won": 12,
+                        "second_serve_successful": 20,
+                        "service_games_won": 11,
+                        "service_points_lost": 27,
+                        "service_points_won": 56,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 5
+                    }
+                }, {
+                    "id": "sr:competitor:160020",
+                    "name": "Dancu, Vlad Andrei",
+                    "abbreviation": "DAN",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 3,
+                        "breakpoints_won": 3,
+                        "double_faults": 0,
+                        "first_serve_points_won": 34,
+                        "first_serve_successful": 45,
+                        "games_won": 14,
+                        "max_games_in_a_row": 4,
+                        "max_points_in_a_row": 5,
+                        "points_won": 81,
+                        "second_serve_points_won": 20,
+                        "second_serve_successful": 44,
+                        "service_games_won": 11,
+                        "service_points_lost": 35,
+                        "service_points_won": 54,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 10
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34858239",
+            "start_time": "2022-07-29T14:05:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:3",
+                    "name": "ATP"
+                },
+                "competition": {
+                    "id": "sr:competition:3151",
+                    "name": "ATP Kitzbuhel, Austria Men Singles",
+                    "parent_id": "sr:competition:3149",
+                    "type": "singles",
+                    "gender": "men",
+                    "level": "atp_250"
+                },
+                "season": {
+                    "id": "sr:season:91461",
+                    "name": "ATP Kitzbuhel, Austria Men Singles 2022",
+                    "start_date": "2022-07-23",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:3151"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "semifinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:129521",
+                    "name": "2022 Kitzbuhel, Austria"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:248779",
+                "name": "Misolic, Filip",
+                "country": "Austria",
+                "country_code": "AUT",
+                "abbreviation": "MIS",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:47975",
+                "name": "Hanfmann, Yannick",
+                "country": "Germany",
+                "country_code": "DEU",
+                "abbreviation": "HAN",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:2481",
+                "name": "Centre Court",
+                "city_name": "Kitzbuhel",
+                "country_name": "Austria",
+                "country_code": "AUT"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "3rd_set",
+            "home_score": 1,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 6,
+                "away_score": 2,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 2,
+                "away_score": 6,
+                "type": "set",
+                "number": 2
+            }, {
+                "home_score": 6,
+                "away_score": 6,
+                "type": "set",
+                "number": 3
+            }],
+            "game_state": {
+                "home_score": 0,
+                "away_score": 0,
+                "serving": "home",
+                "last_point_result": "server_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:248779",
+                    "name": "Misolic, Filip",
+                    "abbreviation": "MIS",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 2,
+                        "breakpoints_won": 5,
+                        "double_faults": 3,
+                        "first_serve_points_won": 31,
+                        "first_serve_successful": 51,
+                        "games_won": 14,
+                        "max_games_in_a_row": 4,
+                        "max_points_in_a_row": 5,
+                        "points_won": 86,
+                        "second_serve_points_won": 19,
+                        "second_serve_successful": 35,
+                        "service_games_won": 9,
+                        "service_points_lost": 39,
+                        "service_points_won": 50,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 7
+                    }
+                }, {
+                    "id": "sr:competitor:47975",
+                    "name": "Hanfmann, Yannick",
+                    "abbreviation": "HAN",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 5,
+                        "breakpoints_won": 5,
+                        "double_faults": 0,
+                        "first_serve_points_won": 42,
+                        "first_serve_successful": 62,
+                        "games_won": 14,
+                        "max_games_in_a_row": 7,
+                        "max_points_in_a_row": 11,
+                        "points_won": 92,
+                        "second_serve_points_won": 11,
+                        "second_serve_successful": 27,
+                        "service_games_won": 9,
+                        "service_points_lost": 36,
+                        "service_points_won": 53,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 11
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35034991",
+            "start_time": "2022-07-29T14:05:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:785",
+                    "name": "ITF Men"
+                },
+                "competition": {
+                    "id": "sr:competition:34812",
+                    "name": "ITF Denmark F1, Men Singles",
+                    "parent_id": "sr:competition:34810",
+                    "type": "singles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:95613",
+                    "name": "ITF Denmark F1, Men Singles 2022",
+                    "start_date": "2022-07-24",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:34812"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135155",
+                    "name": "2022 Denmark F1, Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:157396",
+                "name": "Veldheer, Mick",
+                "country": "Netherlands",
+                "country_code": "NLD",
+                "abbreviation": "VEL",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:344978",
+                "name": "Lane, Lewie",
+                "country": "Germany",
+                "country_code": "DEU",
+                "abbreviation": "LAN",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:59394",
+                "name": "Court 3",
+                "city_name": "Vejle",
+                "country_name": "Denmark",
+                "country_code": "DNK"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "3rd_set",
+            "home_score": 1,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 5,
+                "away_score": 7,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 6,
+                "away_score": 1,
+                "type": "set",
+                "number": 2
+            }, {
+                "home_score": 3,
+                "away_score": 3,
+                "type": "set",
+                "number": 3
+            }],
+            "game_state": {
+                "home_score": 50,
+                "away_score": 40,
+                "serving": "away",
+                "advantage": "home",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:157396",
+                    "name": "Veldheer, Mick",
+                    "abbreviation": "VEL",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 3,
+                        "double_faults": 2,
+                        "first_serve_points_won": 30,
+                        "first_serve_successful": 44,
+                        "games_won": 14,
+                        "max_games_in_a_row": 6,
+                        "max_points_in_a_row": 6,
+                        "points_won": 93,
+                        "second_serve_points_won": 21,
+                        "second_serve_successful": 31,
+                        "service_games_won": 11,
+                        "service_points_lost": 26,
+                        "service_points_won": 51,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 13
+                    }
+                }, {
+                    "id": "sr:competitor:344978",
+                    "name": "Lane, Lewie",
+                    "abbreviation": "LAN",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 2,
+                        "double_faults": 4,
+                        "first_serve_points_won": 45,
+                        "first_serve_successful": 69,
+                        "games_won": 11,
+                        "max_games_in_a_row": 4,
+                        "max_points_in_a_row": 5,
+                        "points_won": 83,
+                        "second_serve_points_won": 12,
+                        "second_serve_successful": 26,
+                        "service_games_won": 9,
+                        "service_points_lost": 42,
+                        "service_points_won": 57,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 6
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35036417",
+            "start_time": "2022-07-29T14:15:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:785",
+                    "name": "ITF Men"
+                },
+                "competition": {
+                    "id": "sr:competition:34814",
+                    "name": "ITF Denmark F1, Men Doubles",
+                    "parent_id": "sr:competition:34810",
+                    "type": "doubles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:95611",
+                    "name": "ITF Denmark F1, Men Doubles 2022",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022",
+                    "competition_id": "sr:competition:34814"
+                },
+                "stage": {
+                    "order": 1,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "semifinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135153",
+                    "name": "2022 Denmark F1, Doubles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:824678",
+                "name": "Hjorth P \/ Poulsen O B",
+                "abbreviation": "H\/P",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:228140",
+                    "name": "Hjorth, Philip",
+                    "country": "Denmark",
+                    "country_code": "DNK",
+                    "abbreviation": "HJO"
+                }, {
+                    "id": "sr:competitor:822192",
+                    "name": "Poulsen, Oskar Brostrom",
+                    "country": "Denmark",
+                    "country_code": "DNK",
+                    "abbreviation": "POU"
+                }]
+            }, {
+                "id": "sr:competitor:923319",
+                "name": "Grinderslev A \/ Moller E",
+                "abbreviation": "G\/M",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:200207",
+                    "name": "Grinderslev, Anders",
+                    "country": "Denmark",
+                    "country_code": "DNK",
+                    "abbreviation": "GRI"
+                }, {
+                    "id": "sr:competitor:632714",
+                    "name": "Moller, Elmer",
+                    "country": "Denmark",
+                    "country_code": "DNK",
+                    "abbreviation": "MOL"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:59398",
+                "name": "Court 4",
+                "city_name": "Vejle",
+                "country_name": "Denmark",
+                "country_code": "DNK"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 0,
+                "away_score": 4,
+                "type": "set",
+                "number": 1
+            }],
+            "game_state": {
+                "home_score": 15,
+                "away_score": 15,
+                "serving": "home",
+                "last_point_result": "server_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:824678",
+                    "name": "Hjorth P \/ Poulsen O B",
+                    "abbreviation": "H\/P",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 1,
+                        "first_serve_points_won": 4,
+                        "first_serve_successful": 9,
+                        "max_points_in_a_row": 2,
+                        "points_won": 10,
+                        "second_serve_points_won": 1,
+                        "second_serve_successful": 4,
+                        "service_games_won": 0,
+                        "service_points_lost": 9,
+                        "service_points_won": 5,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 3
+                    }
+                }, {
+                    "id": "sr:competitor:923319",
+                    "name": "Grinderslev A \/ Moller E",
+                    "abbreviation": "G\/M",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 2,
+                        "double_faults": 2,
+                        "first_serve_points_won": 5,
+                        "first_serve_successful": 6,
+                        "games_won": 4,
+                        "max_games_in_a_row": 4,
+                        "max_points_in_a_row": 6,
+                        "points_won": 17,
+                        "second_serve_points_won": 3,
+                        "second_serve_successful": 5,
+                        "service_games_won": 2,
+                        "service_points_lost": 5,
+                        "service_points_won": 8,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 2
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34870613",
+            "start_time": "2022-07-29T14:30:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:72",
+                    "name": "Challenger"
+                },
+                "competition": {
+                    "id": "sr:competition:36799",
+                    "name": "ATP Challenger San Benedetto Del Tronto, Italy Men Singles",
+                    "parent_id": "sr:competition:36795",
+                    "type": "singles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:93495",
+                    "name": "ATP Challenger San Benedetto Del Tronto, Italy Men Singles 2022",
+                    "start_date": "2022-07-24",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:36799"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:132527",
+                    "name": "2022 San Benedetto Del Tronto, Italy"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:123694",
+                "name": "Brancaccio, Raul",
+                "country": "Italy",
+                "country_code": "ITA",
+                "abbreviation": "BRA",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:505550",
+                "name": "Arnaldi, Matteo",
+                "country": "Italy",
+                "country_code": "ITA",
+                "abbreviation": "ARN",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:14406",
+                "name": "Centrale",
+                "city_name": "San Benedetto",
+                "country_name": "Italy",
+                "country_code": "ITA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "3rd_set",
+            "home_score": 1,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 6,
+                "away_score": 1,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 3,
+                "away_score": 6,
+                "type": "set",
+                "number": 2
+            }, {
+                "home_score": 0,
+                "away_score": 0,
+                "type": "set",
+                "number": 3
+            }]
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34859157",
+            "start_time": "2022-07-29T14:55:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:6",
+                    "name": "WTA"
+                },
+                "competition": {
+                    "id": "sr:competition:2923",
+                    "name": "Warsaw, Poland Women Singles",
+                    "parent_id": "sr:competition:2917",
+                    "type": "singles",
+                    "gender": "women",
+                    "level": "wta_250"
+                },
+                "season": {
+                    "id": "sr:season:91493",
+                    "name": "WTA Gdynia, Poland Women Singles 2022",
+                    "start_date": "2022-07-23",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2923"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:129571",
+                    "name": "2022 Warsaw, Poland"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:274013",
+                "name": "Swiatek, Iga",
+                "country": "Poland",
+                "country_code": "POL",
+                "abbreviation": "SWI",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:42339",
+                "name": "Garcia, Caroline",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "GAR",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:1804",
+                "name": "CENTER COURT",
+                "city_name": "Warsaw",
+                "country_name": "Poland",
+                "country_code": "POL"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "3rd_set",
+            "home_score": 1,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 1,
+                "away_score": 6,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 6,
+                "away_score": 1,
+                "type": "set",
+                "number": 2
+            }, {
+                "home_score": 0,
+                "away_score": 1,
+                "type": "set",
+                "number": 3
+            }],
+            "game_state": {
+                "home_score": 30,
+                "away_score": 40,
+                "serving": "home",
+                "last_point_result": "receiver_winner",
+                "tie_break": false,
+                "point_type": "break"
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:274013",
+                    "name": "Swiatek, Iga",
+                    "abbreviation": "SWI",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 3,
+                        "double_faults": 1,
+                        "first_serve_points_won": 25,
+                        "first_serve_successful": 48,
+                        "games_won": 7,
+                        "max_games_in_a_row": 5,
+                        "max_points_in_a_row": 7,
+                        "points_won": 57,
+                        "second_serve_points_won": 5,
+                        "second_serve_successful": 10,
+                        "service_games_won": 4,
+                        "service_points_lost": 29,
+                        "service_points_won": 30,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 9
+                    }
+                }, {
+                    "id": "sr:competitor:42339",
+                    "name": "Garcia, Caroline",
+                    "abbreviation": "GAR",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 3,
+                        "double_faults": 4,
+                        "first_serve_points_won": 26,
+                        "first_serve_successful": 44,
+                        "games_won": 8,
+                        "max_games_in_a_row": 4,
+                        "max_points_in_a_row": 5,
+                        "points_won": 61,
+                        "second_serve_points_won": 6,
+                        "second_serve_successful": 11,
+                        "service_games_won": 5,
+                        "service_points_lost": 27,
+                        "service_points_won": 32,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 8
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35036427",
+            "start_time": "2022-07-29T14:55:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:213",
+                    "name": "ITF Women"
+                },
+                "competition": {
+                    "id": "sr:competition:19786",
+                    "name": "ITF USA 32A, Women Singles",
+                    "parent_id": "sr:competition:19784",
+                    "type": "singles",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:95657",
+                    "name": "ITF USA 32A, Women Singles 2022",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:19786"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135223",
+                    "name": "2022 USA 32A, Women Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:380396",
+                "name": "Kalieva, Elvina",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "KAL",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:360038",
+                "name": "Stearns, Peyton",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "STE",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:64565",
+                "name": "Court 1",
+                "city_name": "Dallas",
+                "country_name": "USA",
+                "country_code": "USA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "2nd_set",
+            "home_score": 1,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 7,
+                "away_score": 5,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 1,
+                "away_score": 3,
+                "type": "set",
+                "number": 2
+            }],
+            "game_state": {
+                "home_score": 15,
+                "away_score": 30,
+                "serving": "away",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:380396",
+                    "name": "Kalieva, Elvina",
+                    "abbreviation": "KAL",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 2,
+                        "breakpoints_won": 2,
+                        "double_faults": 1,
+                        "first_serve_points_won": 17,
+                        "first_serve_successful": 24,
+                        "games_won": 8,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 5,
+                        "points_won": 58,
+                        "second_serve_points_won": 15,
+                        "second_serve_successful": 29,
+                        "service_games_won": 6,
+                        "service_points_lost": 22,
+                        "service_points_won": 32,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 12
+                    }
+                }, {
+                    "id": "sr:competitor:360038",
+                    "name": "Stearns, Peyton",
+                    "abbreviation": "STE",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 2,
+                        "double_faults": 6,
+                        "first_serve_points_won": 25,
+                        "first_serve_successful": 35,
+                        "games_won": 8,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 5,
+                        "points_won": 58,
+                        "second_serve_points_won": 11,
+                        "second_serve_successful": 21,
+                        "service_games_won": 6,
+                        "service_points_lost": 26,
+                        "service_points_won": 36,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 3
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35037743",
+            "start_time": "2022-07-29T14:55:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:213",
+                    "name": "ITF Women"
+                },
+                "competition": {
+                    "id": "sr:competition:19786",
+                    "name": "ITF USA 32A, Women Singles",
+                    "parent_id": "sr:competition:19784",
+                    "type": "singles",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:95657",
+                    "name": "ITF USA 32A, Women Singles 2022",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:19786"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135223",
+                    "name": "2022 USA 32A, Women Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:51315",
+                "name": "Anderson, Robin",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "AND",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:18933",
+                "name": "GLATCH A.",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "GLA",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:64563",
+                "name": "Court 2",
+                "city_name": "Dallas",
+                "country_name": "USA",
+                "country_code": "USA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "2nd_set",
+            "home_score": 1,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 6,
+                "away_score": 4,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 3,
+                "away_score": 3,
+                "type": "set",
+                "number": 2
+            }],
+            "game_state": {
+                "home_score": 30,
+                "away_score": 15,
+                "serving": "away",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:51315",
+                    "name": "Anderson, Robin",
+                    "abbreviation": "AND",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 4,
+                        "double_faults": 0,
+                        "first_serve_points_won": 14,
+                        "first_serve_successful": 29,
+                        "games_won": 9,
+                        "max_games_in_a_row": 6,
+                        "max_points_in_a_row": 4,
+                        "points_won": 56,
+                        "second_serve_points_won": 13,
+                        "second_serve_successful": 21,
+                        "service_games_won": 5,
+                        "service_points_lost": 23,
+                        "service_points_won": 27,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 7
+                    }
+                }, {
+                    "id": "sr:competitor:18933",
+                    "name": "GLATCH A.",
+                    "abbreviation": "GLA",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 3,
+                        "double_faults": 0,
+                        "first_serve_points_won": 22,
+                        "first_serve_successful": 33,
+                        "games_won": 7,
+                        "max_games_in_a_row": 4,
+                        "max_points_in_a_row": 6,
+                        "points_won": 52,
+                        "second_serve_points_won": 7,
+                        "second_serve_successful": 25,
+                        "service_games_won": 4,
+                        "service_points_lost": 29,
+                        "service_points_won": 29,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 5
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35035035",
+            "start_time": "2022-07-29T15:00:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:213",
+                    "name": "ITF Women"
+                },
+                "competition": {
+                    "id": "sr:competition:16934",
+                    "name": "ITF Germany 07A, Women Singles",
+                    "parent_id": "sr:competition:16932",
+                    "type": "singles",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:95653",
+                    "name": "ITF Germany 07A, Women Singles 2022",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:16934"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135217",
+                    "name": "2022 Germany 07A, Women Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:494296",
+                "name": "Steur, Joelle Lilly Sophie",
+                "country": "Germany",
+                "country_code": "DEU",
+                "abbreviation": "STE",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:325837",
+                "name": "Sakellaridi, Sapfo",
+                "country": "Greece",
+                "country_code": "GRC",
+                "abbreviation": "SAK",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:32031",
+                "name": "Center Court",
+                "city_name": "Horb",
+                "country_name": "Germany",
+                "country_code": "DEU"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "2nd_set",
+            "home_score": 1,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 6,
+                "away_score": 4,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 3,
+                "away_score": 3,
+                "type": "set",
+                "number": 2
+            }],
+            "game_state": {
+                "home_score": 15,
+                "away_score": 0,
+                "serving": "away",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:494296",
+                    "name": "Steur, Joelle Lilly Sophie",
+                    "abbreviation": "STE",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 2,
+                        "double_faults": 1,
+                        "first_serve_points_won": 34,
+                        "first_serve_successful": 51,
+                        "games_won": 9,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 7,
+                        "points_won": 59,
+                        "second_serve_points_won": 4,
+                        "second_serve_successful": 10,
+                        "service_games_won": 7,
+                        "service_points_lost": 24,
+                        "service_points_won": 38,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 6
+                    }
+                }, {
+                    "id": "sr:competitor:325837",
+                    "name": "Sakellaridi, Sapfo",
+                    "abbreviation": "SAK",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 1,
+                        "double_faults": 2,
+                        "first_serve_points_won": 24,
+                        "first_serve_successful": 39,
+                        "games_won": 7,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 7,
+                        "points_won": 53,
+                        "second_serve_points_won": 5,
+                        "second_serve_successful": 9,
+                        "service_games_won": 6,
+                        "service_points_lost": 21,
+                        "service_points_won": 29,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 6
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35036837",
+            "start_time": "2022-07-29T15:00:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:213",
+                    "name": "ITF Women"
+                },
+                "competition": {
+                    "id": "sr:competition:19786",
+                    "name": "ITF USA 32A, Women Singles",
+                    "parent_id": "sr:competition:19784",
+                    "type": "singles",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:95657",
+                    "name": "ITF USA 32A, Women Singles 2022",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:19786"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135223",
+                    "name": "2022 USA 32A, Women Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:420829",
+                "name": "Inoue, Hina",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "INO",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:137948",
+                "name": "Chang, Hanna",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "CHA",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:65191",
+                "name": "Court 3",
+                "city_name": "Dallas",
+                "country_name": "USA",
+                "country_code": "USA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "2nd_set",
+            "home_score": 1,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 7,
+                "away_score": 5,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 3,
+                "away_score": 2,
+                "type": "set",
+                "number": 2
+            }],
+            "game_state": {
+                "home_score": 0,
+                "away_score": 40,
+                "serving": "away",
+                "last_point_result": "server_winner",
+                "tie_break": false,
+                "point_type": "game"
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:420829",
+                    "name": "Inoue, Hina",
+                    "abbreviation": "INO",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 2,
+                        "breakpoints_won": 2,
+                        "double_faults": 2,
+                        "first_serve_points_won": 23,
+                        "first_serve_successful": 33,
+                        "games_won": 10,
+                        "max_games_in_a_row": 2,
+                        "max_points_in_a_row": 5,
+                        "points_won": 58,
+                        "second_serve_points_won": 15,
+                        "second_serve_successful": 23,
+                        "service_games_won": 8,
+                        "service_points_lost": 20,
+                        "service_points_won": 38,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 4
+                    }
+                }, {
+                    "id": "sr:competitor:137948",
+                    "name": "Chang, Hanna",
+                    "abbreviation": "CHA",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 3,
+                        "breakpoints_won": 1,
+                        "double_faults": 2,
+                        "first_serve_points_won": 27,
+                        "first_serve_successful": 37,
+                        "games_won": 7,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 4,
+                        "points_won": 54,
+                        "second_serve_points_won": 7,
+                        "second_serve_successful": 15,
+                        "service_games_won": 6,
+                        "service_points_lost": 20,
+                        "service_points_won": 34,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 2
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34874469",
+            "start_time": "2022-07-29T15:15:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:72",
+                    "name": "Challenger"
+                },
+                "competition": {
+                    "id": "sr:competition:3717",
+                    "name": "ATP Challenger Segovia, Spain Men Double",
+                    "parent_id": "sr:competition:3713",
+                    "type": "doubles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:93463",
+                    "name": "ATP Challenger Segovia, Spain Men Double 2022",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022",
+                    "competition_id": "sr:competition:3717"
+                },
+                "stage": {
+                    "order": 1,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "semifinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:132477",
+                    "name": "2022 Segovia, Spain, Doubles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:833938",
+                "name": "Echeverria J \/ Moro Canas A",
+                "abbreviation": "E\/M",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:290936",
+                    "name": "Echeverria, John",
+                    "country": "Spain",
+                    "country_code": "ESP",
+                    "abbreviation": "ECH"
+                }, {
+                    "id": "sr:competitor:325737",
+                    "name": "Moro Canas, Alejandro",
+                    "country": "Spain",
+                    "country_code": "ESP",
+                    "abbreviation": "MOR"
+                }]
+            }, {
+                "id": "sr:competitor:156906",
+                "name": "Lock B \/ Lock C J",
+                "country": "Zimbabwe",
+                "country_code": "ZWE",
+                "abbreviation": "L\/L",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:96859",
+                    "name": "Lock, Benjamin",
+                    "country": "Zimbabwe",
+                    "country_code": "ZWE",
+                    "abbreviation": "LOC"
+                }, {
+                    "id": "sr:competitor:155860",
+                    "name": "Lock, Courtney John",
+                    "country": "Zimbabwe",
+                    "country_code": "ZWE",
+                    "abbreviation": "LOC"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:65137",
+                "name": "Pista 1",
+                "city_name": "Segovia",
+                "country_name": "Spain",
+                "country_code": "ESP"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "2nd_set",
+            "home_score": 0,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 5,
+                "away_score": 7,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 1,
+                "away_score": 3,
+                "type": "set",
+                "number": 2
+            }]
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35047395",
+            "start_time": "2022-07-29T15:25:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:74",
+                    "name": "Federation Cup"
+                },
+                "competition": {
+                    "id": "sr:competition:2102",
+                    "name": "Billie Jean King Cup",
+                    "type": "mixed",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:91975",
+                    "name": "Billie Jean King Cup 2022",
+                    "start_date": "2022-04-11",
+                    "end_date": "2022-11-13",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2102"
+                },
+                "round": {},
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:210924",
+                "name": "Espinal Sanchez, Natalie Gabriela",
+                "country": "Honduras",
+                "country_code": "HND",
+                "abbreviation": "ESP",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:849783",
+                "name": "James, Junmoke",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "JAM",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:26042",
+                "name": "Court 2",
+                "city_name": "Santo Domingo",
+                "country_name": "Dominican Republic",
+                "country_code": "DOM"
+            },
+            "estimated": true
+        },
+        "sport_event_status": {
+            "status": "ended",
+            "match_status": "ended",
+            "home_score": 2,
+            "away_score": 0,
+            "winner_id": "sr:competitor:210924",
+            "period_scores": [{
+                "home_score": 6,
+                "away_score": 0,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 6,
+                "away_score": 1,
+                "type": "set",
+                "number": 2
+            }]
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:210924",
+                    "name": "Espinal Sanchez, Natalie Gabriela",
+                    "abbreviation": "ESP",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 5,
+                        "double_faults": 1,
+                        "first_serve_points_won": 28,
+                        "first_serve_successful": 32,
+                        "games_won": 12,
+                        "max_games_in_a_row": 11,
+                        "max_points_in_a_row": 8,
+                        "points_won": 60,
+                        "second_serve_points_won": 3,
+                        "second_serve_successful": 5,
+                        "service_games_won": 7,
+                        "service_points_lost": 7,
+                        "service_points_won": 31,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 9
+                    }
+                }, {
+                    "id": "sr:competitor:849783",
+                    "name": "James, Junmoke",
+                    "abbreviation": "JAM",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 1,
+                        "first_serve_points_won": 16,
+                        "first_serve_successful": 40,
+                        "games_won": 1,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 3,
+                        "points_won": 27,
+                        "second_serve_points_won": 4,
+                        "second_serve_successful": 8,
+                        "service_games_won": 1,
+                        "service_points_lost": 29,
+                        "service_points_won": 20,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 1
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34870619",
+            "start_time": "2022-07-29T15:30:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:72",
+                    "name": "Challenger"
+                },
+                "competition": {
+                    "id": "sr:competition:36797",
+                    "name": "ATP Challenger San Benedetto Del Tronto, Italy Men Doubles",
+                    "parent_id": "sr:competition:36795",
+                    "type": "doubles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:93493",
+                    "name": "ATP Challenger San Benedetto Del Tronto, Italy Men Doubles 2022",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022",
+                    "competition_id": "sr:competition:36797"
+                },
+                "stage": {
+                    "order": 1,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "semifinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:132523",
+                    "name": "2022 San Benedetto Del Tronto, Italy, Doubles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:906485",
+                "name": "Manafov V \/ Prihodko O",
+                "abbreviation": "M\/P",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:49548",
+                    "name": "Manafov, Vladyslav",
+                    "country": "Ukraine",
+                    "country_code": "UKR",
+                    "abbreviation": "MAN"
+                }, {
+                    "id": "sr:competitor:152864",
+                    "name": "Prihodko, Oleg",
+                    "country": "Ukraine",
+                    "country_code": "UKR",
+                    "abbreviation": "PRI"
+                }]
+            }, {
+                "id": "sr:competitor:922737",
+                "name": "Boscardin Dias P \/ Domingues J",
+                "abbreviation": "B\/D",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:57327",
+                    "name": "Domingues, Joao",
+                    "country": "Portugal",
+                    "country_code": "PRT",
+                    "abbreviation": "DOM"
+                }, {
+                    "id": "sr:competitor:434058",
+                    "name": "Boscardin Dias, Pedro",
+                    "country": "Brazil",
+                    "country_code": "BRA",
+                    "abbreviation": "BOS"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:14410",
+                "name": "Campo 3",
+                "city_name": "San Benedetto",
+                "country_name": "Italy",
+                "country_code": "ITA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 2,
+                "away_score": 2,
+                "type": "set",
+                "number": 1
+            }]
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35033921",
+            "start_time": "2022-07-29T15:30:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:785",
+                    "name": "ITF Men"
+                },
+                "competition": {
+                    "id": "sr:competition:18798",
+                    "name": "ITF Spain F18, Men Singles",
+                    "parent_id": "sr:competition:18796",
+                    "type": "singles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:95591",
+                    "name": "ITF Spain F18, Men Singles 2022",
+                    "start_date": "2022-07-24",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:18798"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135125",
+                    "name": "2022 Spain F18, Singles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:392066",
+                "name": "Navone, Mariano",
+                "country": "Argentina",
+                "country_code": "ARG",
+                "abbreviation": "NAV",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:76513",
+                "name": "Vidal Azorin, Jose Fco",
+                "country": "Spain",
+                "country_code": "ESP",
+                "abbreviation": "VID",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:31903",
+                "name": "Court 2",
+                "city_name": "Denia",
+                "country_name": "Spain",
+                "country_code": "ESP"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "2nd_set",
+            "home_score": 1,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 6,
+                "away_score": 2,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 0,
+                "away_score": 0,
+                "type": "set",
+                "number": 2
+            }],
+            "game_state": {
+                "home_score": 0,
+                "away_score": 0,
+                "serving": "away",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:392066",
+                    "name": "Navone, Mariano",
+                    "abbreviation": "NAV",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 2,
+                        "double_faults": 0,
+                        "first_serve_points_won": 13,
+                        "first_serve_successful": 16,
+                        "games_won": 6,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 9,
+                        "points_won": 30,
+                        "second_serve_points_won": 4,
+                        "second_serve_successful": 5,
+                        "service_games_won": 4,
+                        "service_points_lost": 4,
+                        "service_points_won": 17,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 2
+                    }
+                }, {
+                    "id": "sr:competitor:76513",
+                    "name": "Vidal Azorin, Jose Fco",
+                    "abbreviation": "VID",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 1,
+                        "first_serve_points_won": 12,
+                        "first_serve_successful": 24,
+                        "games_won": 2,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 4,
+                        "points_won": 18,
+                        "second_serve_points_won": 2,
+                        "second_serve_successful": 2,
+                        "service_games_won": 2,
+                        "service_points_lost": 13,
+                        "service_points_won": 14,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 0
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34858609",
+            "start_time": "2022-07-29T15:35:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:3",
+                    "name": "ATP"
+                },
+                "competition": {
+                    "id": "sr:competition:2965",
+                    "name": "ATP Umag, Croatia Men Singles",
+                    "parent_id": "sr:competition:2963",
+                    "type": "singles",
+                    "gender": "men",
+                    "level": "atp_250"
+                },
+                "season": {
+                    "id": "sr:season:91465",
+                    "name": "ATP Umag, Croatia Men Singles 2022",
+                    "start_date": "2022-07-23",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2965"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:129527",
+                    "name": "2022 Umag, Croatia"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:51141",
+                "name": "Carballes Baena, Roberto",
+                "country": "Spain",
+                "country_code": "ESP",
+                "abbreviation": "CAR",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:225050",
+                "name": "Sinner, Jannik",
+                "country": "Italy",
+                "country_code": "ITA",
+                "abbreviation": "SIN",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:1943",
+                "name": "Goran Ivanisevic Stadium",
+                "city_name": "Umag",
+                "country_name": "Croatia",
+                "country_code": "HRV"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 4,
+                "away_score": 5,
+                "type": "set",
+                "number": 1
+            }],
+            "game_state": {
+                "home_score": 30,
+                "away_score": 30,
+                "serving": "away",
+                "last_point_result": "server_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:51141",
+                    "name": "Carballes Baena, Roberto",
+                    "abbreviation": "CAR",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 0,
+                        "double_faults": 1,
+                        "first_serve_points_won": 11,
+                        "first_serve_successful": 18,
+                        "games_won": 4,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 3,
+                        "points_won": 25,
+                        "second_serve_points_won": 6,
+                        "second_serve_successful": 10,
+                        "service_games_won": 4,
+                        "service_points_lost": 12,
+                        "service_points_won": 17,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 0
+                    }
+                }, {
+                    "id": "sr:competitor:225050",
+                    "name": "Sinner, Jannik",
+                    "abbreviation": "SIN",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 2,
+                        "breakpoints_won": 1,
+                        "double_faults": 2,
+                        "first_serve_points_won": 14,
+                        "first_serve_successful": 16,
+                        "games_won": 5,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 5,
+                        "points_won": 32,
+                        "second_serve_points_won": 6,
+                        "second_serve_successful": 10,
+                        "service_games_won": 4,
+                        "service_points_lost": 8,
+                        "service_points_won": 20,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 1
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35021775",
+            "start_time": "2022-07-29T15:40:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:785",
+                    "name": "ITF Men"
+                },
+                "competition": {
+                    "id": "sr:competition:16476",
+                    "name": "ITF USA F25, Men Doubles",
+                    "parent_id": "sr:competition:16426",
+                    "type": "doubles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:95599",
+                    "name": "ITF USA F25, Men Doubles 2022",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022",
+                    "competition_id": "sr:competition:16476"
+                },
+                "stage": {
+                    "order": 1,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135135",
+                    "name": "2022 USA F25, Doubles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:923627",
+                "name": "Heck H \/ Nidunjianzan F",
+                "abbreviation": "H\/N",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:405947",
+                    "name": "Heck, Hunter",
+                    "country": "USA",
+                    "country_code": "USA",
+                    "abbreviation": "HEC"
+                }, {
+                    "id": "sr:competitor:649040",
+                    "name": "Nidunjianzan, Fnu",
+                    "country": "China",
+                    "country_code": "CHN",
+                    "abbreviation": "NID"
+                }]
+            }, {
+                "id": "sr:competitor:923623",
+                "name": "Dickerson R \/ Seelig K",
+                "abbreviation": "D\/S",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:105021",
+                    "name": "Seelig, Kyle",
+                    "country": "USA",
+                    "country_code": "USA",
+                    "abbreviation": "SEE"
+                }, {
+                    "id": "sr:competitor:649038",
+                    "name": "Dickerson, Ryan",
+                    "country": "USA",
+                    "country_code": "USA",
+                    "abbreviation": "DIC"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:44378",
+                "name": "Court 3",
+                "city_name": "Edwardsville",
+                "country_name": "USA",
+                "country_code": "USA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "2nd_set",
+            "home_score": 0,
+            "away_score": 1,
+            "period_scores": [{
+                "home_score": 1,
+                "away_score": 6,
+                "type": "set",
+                "number": 1
+            }, {
+                "home_score": 2,
+                "away_score": 3,
+                "type": "set",
+                "number": 2
+            }],
+            "game_state": {
+                "home_score": 30,
+                "away_score": 15,
+                "serving": "away",
+                "last_point_result": "server_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:923627",
+                    "name": "Heck H \/ Nidunjianzan F",
+                    "abbreviation": "H\/N",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 1,
+                        "first_serve_points_won": 14,
+                        "first_serve_successful": 25,
+                        "games_won": 3,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 3,
+                        "points_won": 25,
+                        "second_serve_points_won": 1,
+                        "second_serve_successful": 8,
+                        "service_games_won": 3,
+                        "service_points_lost": 19,
+                        "service_points_won": 15,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 2
+                    }
+                }, {
+                    "id": "sr:competitor:923623",
+                    "name": "Dickerson R \/ Seelig K",
+                    "abbreviation": "D\/S",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 3,
+                        "double_faults": 1,
+                        "first_serve_points_won": 18,
+                        "first_serve_successful": 25,
+                        "games_won": 9,
+                        "max_games_in_a_row": 5,
+                        "max_points_in_a_row": 7,
+                        "points_won": 44,
+                        "second_serve_points_won": 7,
+                        "second_serve_successful": 9,
+                        "service_games_won": 6,
+                        "service_points_lost": 10,
+                        "service_points_won": 25,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 5
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35047393",
+            "start_time": "2022-07-29T15:55:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:74",
+                    "name": "Federation Cup"
+                },
+                "competition": {
+                    "id": "sr:competition:2102",
+                    "name": "Billie Jean King Cup",
+                    "type": "mixed",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:91975",
+                    "name": "Billie Jean King Cup 2022",
+                    "start_date": "2022-04-11",
+                    "end_date": "2022-11-13",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2102"
+                },
+                "round": {},
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:195594",
+                "name": "Rahmanparast, Ariana",
+                "country": "Costa Rica",
+                "country_code": "CRI",
+                "abbreviation": "RAH",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:450975",
+                "name": "Chambers, Hannah",
+                "country": "Barbados",
+                "country_code": "BRB",
+                "abbreviation": "CHA",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:26050",
+                "name": "Court 1",
+                "city_name": "Santo Domingo",
+                "country_name": "Dominican Republic",
+                "country_code": "DOM"
+            },
+            "estimated": true
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 2,
+                "away_score": 2,
+                "type": "set",
+                "number": 1
+            }],
+            "game_state": {
+                "home_score": 15,
+                "away_score": 0,
+                "serving": "away",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:195594",
+                    "name": "Rahmanparast, Ariana",
+                    "abbreviation": "RAH",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 1,
+                        "double_faults": 1,
+                        "first_serve_points_won": 7,
+                        "first_serve_successful": 11,
+                        "games_won": 2,
+                        "max_games_in_a_row": 2,
+                        "max_points_in_a_row": 10,
+                        "points_won": 17,
+                        "second_serve_points_won": 3,
+                        "second_serve_successful": 6,
+                        "service_games_won": 1,
+                        "service_points_lost": 8,
+                        "service_points_won": 10,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 1
+                    }
+                }, {
+                    "id": "sr:competitor:450975",
+                    "name": "Chambers, Hannah",
+                    "abbreviation": "CHA",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 1,
+                        "double_faults": 2,
+                        "first_serve_points_won": 3,
+                        "first_serve_successful": 8,
+                        "games_won": 2,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 3,
+                        "points_won": 12,
+                        "second_serve_points_won": 1,
+                        "second_serve_successful": 1,
+                        "service_games_won": 1,
+                        "service_points_lost": 7,
+                        "service_points_won": 4,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 2
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34857081",
+            "start_time": "2022-07-29T16:00:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:3",
+                    "name": "ATP"
+                },
+                "competition": {
+                    "id": "sr:competition:3245",
+                    "name": "ATP Atlanta, USA Men Singles",
+                    "parent_id": "sr:competition:3243",
+                    "type": "singles",
+                    "gender": "men",
+                    "level": "atp_250"
+                },
+                "season": {
+                    "id": "sr:season:91469",
+                    "name": "ATP Atlanta, USA Men Singles 2022",
+                    "start_date": "2022-07-23",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:3245"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:129533",
+                    "name": "2022 Atlanta, USA"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:89320",
+                "name": "Ivashka, Ilya",
+                "country": "Neutral",
+                "abbreviation": "IVA",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:138546",
+                "name": "Paul, Tommy",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "PAU",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:1924",
+                "name": "Stadium Court",
+                "city_name": "Atlanta",
+                "country_name": "USA",
+                "country_code": "USA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 3,
+                "away_score": 2,
+                "type": "set",
+                "number": 1
+            }],
+            "game_state": {
+                "home_score": 0,
+                "away_score": 0,
+                "serving": "home",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:89320",
+                    "name": "Ivashka, Ilya",
+                    "abbreviation": "IVA",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 1,
+                        "double_faults": 0,
+                        "first_serve_points_won": 4,
+                        "first_serve_successful": 5,
+                        "games_won": 3,
+                        "max_games_in_a_row": 3,
+                        "max_points_in_a_row": 6,
+                        "points_won": 18,
+                        "second_serve_points_won": 4,
+                        "second_serve_successful": 5,
+                        "service_games_won": 2,
+                        "service_points_lost": 2,
+                        "service_points_won": 8,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 2
+                    }
+                }, {
+                    "id": "sr:competitor:138546",
+                    "name": "Paul, Tommy",
+                    "abbreviation": "PAU",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 2,
+                        "breakpoints_won": 0,
+                        "double_faults": 0,
+                        "first_serve_points_won": 10,
+                        "first_serve_successful": 16,
+                        "games_won": 2,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 3,
+                        "points_won": 14,
+                        "second_serve_points_won": 2,
+                        "second_serve_successful": 6,
+                        "service_games_won": 2,
+                        "service_points_lost": 10,
+                        "service_points_won": 12,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 0
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34858621",
+            "start_time": "2022-07-29T16:00:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:3",
+                    "name": "ATP"
+                },
+                "competition": {
+                    "id": "sr:competition:2965",
+                    "name": "ATP Umag, Croatia Men Singles",
+                    "parent_id": "sr:competition:2963",
+                    "type": "singles",
+                    "gender": "men",
+                    "level": "atp_250"
+                },
+                "season": {
+                    "id": "sr:season:91465",
+                    "name": "ATP Umag, Croatia Men Singles 2022",
+                    "start_date": "2022-07-23",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2965"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:129527",
+                    "name": "2022 Umag, Croatia"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:108565",
+                "name": "Zapata Miralles, Bernabe",
+                "country": "Spain",
+                "country_code": "ESP",
+                "abbreviation": "ZAP",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:298122",
+                "name": "Zeppieri, Giulio",
+                "country": "Italy",
+                "country_code": "ITA",
+                "abbreviation": "ZEP",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:1944",
+                "name": "Grandstand",
+                "city_name": "Umag",
+                "country_name": "Croatia",
+                "country_code": "HRV"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 3,
+                "away_score": 3,
+                "type": "set",
+                "number": 1
+            }],
+            "game_state": {
+                "home_score": 0,
+                "away_score": 0,
+                "serving": "home",
+                "last_point_result": "receiver_winner",
+                "tie_break": false
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:108565",
+                    "name": "Zapata Miralles, Bernabe",
+                    "abbreviation": "ZAP",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 1,
+                        "breakpoints_won": 1,
+                        "double_faults": 1,
+                        "first_serve_points_won": 7,
+                        "first_serve_successful": 9,
+                        "games_won": 3,
+                        "max_games_in_a_row": 2,
+                        "max_points_in_a_row": 5,
+                        "points_won": 22,
+                        "second_serve_points_won": 4,
+                        "second_serve_successful": 8,
+                        "service_games_won": 2,
+                        "service_points_lost": 7,
+                        "service_points_won": 11,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 4
+                    }
+                }, {
+                    "id": "sr:competitor:298122",
+                    "name": "Zeppieri, Giulio",
+                    "abbreviation": "ZEP",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 2,
+                        "breakpoints_won": 1,
+                        "double_faults": 0,
+                        "first_serve_points_won": 10,
+                        "first_serve_successful": 16,
+                        "games_won": 3,
+                        "max_games_in_a_row": 2,
+                        "max_points_in_a_row": 4,
+                        "points_won": 19,
+                        "second_serve_points_won": 2,
+                        "second_serve_successful": 7,
+                        "service_games_won": 2,
+                        "service_points_lost": 11,
+                        "service_points_won": 12,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 1
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35037305",
+            "start_time": "2022-07-29T16:10:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:213",
+                    "name": "ITF Women"
+                },
+                "competition": {
+                    "id": "sr:competition:23083",
+                    "name": "ITF Italy 16A, Women Doubles",
+                    "parent_id": "sr:competition:23079",
+                    "type": "doubles",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:95641",
+                    "name": "ITF Italy 16A, Women Doubles 2022",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-29",
+                    "year": "2022",
+                    "competition_id": "sr:competition:23083"
+                },
+                "stage": {
+                    "order": 1,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-29",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "final"
+                },
+                "groups": [{
+                    "id": "sr:cup:135209",
+                    "name": "2022 Italy 16A, Women Doubles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:922989",
+                "name": "Moratelli A \/ Vedder E",
+                "abbreviation": "M\/V",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:52695",
+                    "name": "Moratelli, Angelica",
+                    "country": "Italy",
+                    "country_code": "ITA",
+                    "abbreviation": "MOR"
+                }, {
+                    "id": "sr:competitor:215598",
+                    "name": "Vedder, Eva",
+                    "country": "Netherlands",
+                    "country_code": "NLD",
+                    "abbreviation": "VED"
+                }]
+            }, {
+                "id": "sr:competitor:613212",
+                "name": "Lizarazo Y \/ Zantedeschi A",
+                "abbreviation": "L\/Z",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:42864",
+                    "name": "Lizarazo, Yuliana",
+                    "country": "Colombia",
+                    "country_code": "COL",
+                    "abbreviation": "LIZ"
+                }, {
+                    "id": "sr:competitor:227486",
+                    "name": "Zantedeschi, Aurora",
+                    "country": "Italy",
+                    "country_code": "ITA",
+                    "abbreviation": "ZAN"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:65169",
+                "name": "Serena Wines Center",
+                "city_name": "Cordenons",
+                "country_name": "Italy",
+                "country_code": "ITA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 1,
+                "away_score": 0,
+                "type": "set",
+                "number": 1
+            }],
+            "game_state": {
+                "home_score": 30,
+                "away_score": 40,
+                "serving": "away",
+                "last_point_result": "receiver_winner",
+                "tie_break": false,
+                "point_type": "game"
+            }
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:922989",
+                    "name": "Moratelli A \/ Vedder E",
+                    "abbreviation": "M\/V",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 0,
+                        "first_serve_points_won": 4,
+                        "first_serve_successful": 5,
+                        "games_won": 1,
+                        "max_games_in_a_row": 1,
+                        "max_points_in_a_row": 3,
+                        "points_won": 6,
+                        "second_serve_points_won": 0,
+                        "second_serve_successful": 1,
+                        "service_games_won": 1,
+                        "service_points_lost": 2,
+                        "service_points_won": 4,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 0
+                    }
+                }, {
+                    "id": "sr:competitor:613212",
+                    "name": "Lizarazo Y \/ Zantedeschi A",
+                    "abbreviation": "L\/Z",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 0,
+                        "first_serve_points_won": 1,
+                        "first_serve_successful": 2,
+                        "max_points_in_a_row": 3,
+                        "points_won": 5,
+                        "second_serve_points_won": 2,
+                        "second_serve_successful": 3,
+                        "service_games_won": 0,
+                        "service_points_lost": 2,
+                        "service_points_won": 3,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 0
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35036525",
+            "start_time": "2022-07-29T16:15:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:213",
+                    "name": "ITF Women"
+                },
+                "competition": {
+                    "id": "sr:competition:16936",
+                    "name": "ITF Germany 07A, Women Doubles",
+                    "parent_id": "sr:competition:16932",
+                    "type": "doubles",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:95647",
+                    "name": "ITF Germany 07A, Women Doubles 2022",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022",
+                    "competition_id": "sr:competition:16936"
+                },
+                "stage": {
+                    "order": 1,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "semifinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135215",
+                    "name": "2022 Germany 07A, Women Doubles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:888259",
+                "name": "Scholl C \/ Vojcinakova I",
+                "abbreviation": "S\/V",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:45834",
+                    "name": "Scholl, Chiara",
+                    "country": "USA",
+                    "country_code": "USA",
+                    "abbreviation": "SCH"
+                }, {
+                    "id": "sr:competitor:105543",
+                    "name": "Vojcinakova, Ingrid",
+                    "country": "Slovakia",
+                    "country_code": "SVK",
+                    "abbreviation": "VOJ"
+                }]
+            }, {
+                "id": "sr:competitor:816426",
+                "name": "Fourlis J \/ Parnaby A",
+                "abbreviation": "F\/P",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:136372",
+                    "name": "Parnaby, Alana",
+                    "country": "Australia",
+                    "country_code": "AUS",
+                    "abbreviation": "PAR"
+                }, {
+                    "id": "sr:competitor:147506",
+                    "name": "Fourlis, Jaimee",
+                    "country": "Australia",
+                    "country_code": "AUS",
+                    "abbreviation": "FOU"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:32027",
+                "name": "Court 1",
+                "city_name": "Horb",
+                "country_name": "Germany",
+                "country_code": "DEU"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 0,
+                "away_score": 0,
+                "type": "set",
+                "number": 1
+            }]
+        },
+        "statistics": {
+            "totals": {
+                "competitors": [{
+                    "id": "sr:competitor:888259",
+                    "name": "Scholl C \/ Vojcinakova I",
+                    "abbreviation": "S\/V",
+                    "qualifier": "home",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 0,
+                        "first_serve_points_won": 0,
+                        "first_serve_successful": 1,
+                        "second_serve_points_won": 0,
+                        "second_serve_successful": 0,
+                        "service_games_won": 0,
+                        "service_points_lost": 1,
+                        "service_points_won": 0,
+                        "total_breakpoints": 0
+                    }
+                }, {
+                    "id": "sr:competitor:816426",
+                    "name": "Fourlis J \/ Parnaby A",
+                    "abbreviation": "F\/P",
+                    "qualifier": "away",
+                    "statistics": {
+                        "aces": 0,
+                        "breakpoints_won": 0,
+                        "double_faults": 0,
+                        "first_serve_points_won": 0,
+                        "first_serve_successful": 0,
+                        "max_points_in_a_row": 1,
+                        "points_won": 1,
+                        "second_serve_points_won": 0,
+                        "second_serve_successful": 0,
+                        "service_games_won": 0,
+                        "service_points_lost": 0,
+                        "service_points_won": 0,
+                        "tiebreaks_won": 0,
+                        "total_breakpoints": 0
+                    }
+                }]
+            }
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35047387",
+            "start_time": "2022-07-29T16:20:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:74",
+                    "name": "Federation Cup"
+                },
+                "competition": {
+                    "id": "sr:competition:2102",
+                    "name": "Billie Jean King Cup",
+                    "type": "mixed",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:91975",
+                    "name": "Billie Jean King Cup 2022",
+                    "start_date": "2022-04-11",
+                    "end_date": "2022-11-13",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2102"
+                },
+                "round": {},
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:924587",
+                "name": "Chavez Tello R Z \/ Ching K",
+                "country": "Panama",
+                "country_code": "PAN",
+                "abbreviation": "C\/C",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:348316",
+                    "name": "Chavez Tello, Rosaline Zafir",
+                    "country": "Panama",
+                    "country_code": "PAN",
+                    "abbreviation": "CHA"
+                }, {
+                    "id": "sr:competitor:923017",
+                    "name": "Ching, Karla",
+                    "country": "Panama",
+                    "country_code": "PAN",
+                    "abbreviation": "CHI"
+                }]
+            }, {
+                "id": "sr:competitor:924583",
+                "name": "Bou J \/ Snyder S I",
+                "country": "Puerto Rico",
+                "country_code": "PRI",
+                "abbreviation": "B\/S",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:210920",
+                    "name": "Bou, Julieanne",
+                    "country": "Puerto Rico",
+                    "country_code": "PRI",
+                    "abbreviation": "BOU"
+                }, {
+                    "id": "sr:competitor:923035",
+                    "name": "Snyder, Sara Isabel",
+                    "country": "Puerto Rico",
+                    "country_code": "PRI",
+                    "abbreviation": "SNY"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:35938",
+                "name": "Court 3",
+                "city_name": "Santo Domingo",
+                "country_name": "Dominican Republic",
+                "country_code": "DOM"
+            },
+            "estimated": true
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "match_about_to_start"
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:34874439",
+            "start_time": "2022-07-29T16:25:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:72",
+                    "name": "Challenger"
+                },
+                "competition": {
+                    "id": "sr:competition:3715",
+                    "name": "ATP Challenger Segovia, Spain Men Singles",
+                    "parent_id": "sr:competition:3713",
+                    "type": "singles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:93467",
+                    "name": "ATP Challenger Segovia, Spain Men Singles 2022",
+                    "start_date": "2022-07-24",
+                    "end_date": "2022-07-31",
+                    "year": "2022",
+                    "competition_id": "sr:competition:3715"
+                },
+                "stage": {
+                    "order": 2,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-25",
+                    "end_date": "2022-07-31",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:132481",
+                    "name": "2022 Segovia, Spain"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:125006",
+                "name": "Borges, Nuno",
+                "country": "Portugal",
+                "country_code": "PRT",
+                "abbreviation": "BOR",
+                "qualifier": "home"
+            }, {
+                "id": "sr:competitor:185388",
+                "name": "Humbert, Ugo",
+                "country": "France",
+                "country_code": "FRA",
+                "abbreviation": "HUM",
+                "qualifier": "away"
+            }],
+            "venue": {
+                "id": "sr:venue:65135",
+                "name": "Pista Pedro Munoz",
+                "city_name": "Segovia",
+                "country_name": "Spain",
+                "country_code": "ESP"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "1st_set",
+            "home_score": 0,
+            "away_score": 0,
+            "period_scores": [{
+                "home_score": 1,
+                "away_score": 0,
+                "type": "set",
+                "number": 1
+            }]
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35021653",
+            "start_time": "2022-07-29T16:30:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:785",
+                    "name": "ITF Men"
+                },
+                "competition": {
+                    "id": "sr:competition:16476",
+                    "name": "ITF USA F25, Men Doubles",
+                    "parent_id": "sr:competition:16426",
+                    "type": "doubles",
+                    "gender": "men"
+                },
+                "season": {
+                    "id": "sr:season:95599",
+                    "name": "ITF USA F25, Men Doubles 2022",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022",
+                    "competition_id": "sr:competition:16476"
+                },
+                "stage": {
+                    "order": 1,
+                    "type": "cup",
+                    "phase": "stage_1_playoff",
+                    "start_date": "2022-07-26",
+                    "end_date": "2022-07-30",
+                    "year": "2022"
+                },
+                "round": {
+                    "name": "quarterfinal"
+                },
+                "groups": [{
+                    "id": "sr:cup:135135",
+                    "name": "2022 USA F25, Doubles"
+                }],
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:923637",
+                "name": "Ozolins K \/ Rocens M",
+                "abbreviation": "O\/R",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:297572",
+                    "name": "Rocens, Martins",
+                    "country": "Latvia",
+                    "country_code": "LVA",
+                    "abbreviation": "ROC"
+                }, {
+                    "id": "sr:competitor:418083",
+                    "name": "Ozolins, Karlis",
+                    "country": "Latvia",
+                    "country_code": "LVA",
+                    "abbreviation": "OZO"
+                }]
+            }, {
+                "id": "sr:competitor:896701",
+                "name": "Ochi M \/ Watanabe S",
+                "abbreviation": "O\/W",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:182967",
+                    "name": "Ochi, Makoto",
+                    "country": "Japan",
+                    "country_code": "JPN",
+                    "abbreviation": "OCH"
+                }, {
+                    "id": "sr:competitor:390480",
+                    "name": "Watanabe, Seita",
+                    "country": "Japan",
+                    "country_code": "JPN",
+                    "abbreviation": "WAT"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:44376",
+                "name": "Court 2",
+                "city_name": "Edwardsville",
+                "country_name": "USA",
+                "country_code": "USA"
+            },
+            "estimated": false
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "match_about_to_start"
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35047401",
+            "start_time": "2022-07-29T16:30:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:74",
+                    "name": "Federation Cup"
+                },
+                "competition": {
+                    "id": "sr:competition:2102",
+                    "name": "Billie Jean King Cup",
+                    "type": "mixed",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:91975",
+                    "name": "Billie Jean King Cup 2022",
+                    "start_date": "2022-04-11",
+                    "end_date": "2022-11-13",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2102"
+                },
+                "round": {},
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:924581",
+                "name": "Castedo M O \/ Vrsalovic Gimenez M A",
+                "country": "Bolivia",
+                "country_code": "BOL",
+                "abbreviation": "C\/V",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:618100",
+                    "name": "Vrsalovic Gimenez, Masha Alexandra",
+                    "country": "Bolivia",
+                    "country_code": "BOL",
+                    "abbreviation": "VRS"
+                }, {
+                    "id": "sr:competitor:620430",
+                    "name": "Castedo, Maria Olivia",
+                    "country": "Bolivia",
+                    "country_code": "BOL",
+                    "abbreviation": "CAS"
+                }]
+            }, {
+                "id": "sr:competitor:924585",
+                "name": "Croes J K \/ Solagnier K",
+                "country": "Aruba",
+                "country_code": "ABW",
+                "abbreviation": "C\/S",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:923011",
+                    "name": "Solagnier, Kayla",
+                    "country": "Aruba",
+                    "country_code": "ABW",
+                    "abbreviation": "SOL"
+                }, {
+                    "id": "sr:competitor:923029",
+                    "name": "Croes, Jelsyvette Kaylyn",
+                    "country": "Aruba",
+                    "country_code": "ABW",
+                    "abbreviation": "CRO"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:65197",
+                "name": "Center",
+                "city_name": "Santo Domingo",
+                "country_name": "Dominican Republic",
+                "country_code": "DOM"
+            },
+            "estimated": true
+        },
+        "sport_event_status": {
+            "status": "live",
+            "match_status": "match_about_to_start"
+        }
+    }, {
+        "sport_event": {
+            "id": "sr:sport_event:35047391",
+            "start_time": "2022-07-29T16:40:00+00:00",
+            "start_time_confirmed": true,
+            "sport_event_context": {
+                "sport": {
+                    "id": "sr:sport:5",
+                    "name": "Tennis"
+                },
+                "category": {
+                    "id": "sr:category:74",
+                    "name": "Federation Cup"
+                },
+                "competition": {
+                    "id": "sr:competition:2102",
+                    "name": "Billie Jean King Cup",
+                    "type": "mixed",
+                    "gender": "women"
+                },
+                "season": {
+                    "id": "sr:season:91975",
+                    "name": "Billie Jean King Cup 2022",
+                    "start_date": "2022-04-11",
+                    "end_date": "2022-11-13",
+                    "year": "2022",
+                    "competition_id": "sr:competition:2102"
+                },
+                "round": {},
+                "mode": {
+                    "best_of": 3
+                }
+            },
+            "coverage": {
+                "type": "sport_event",
+                "sport_event_properties": {
+                    "enhanced_stats": false,
+                    "scores": "live",
+                    "detailed_serve_outcomes": true,
+                    "play_by_play": true
+                }
+            },
+            "competitors": [{
+                "id": "sr:competitor:211728",
+                "name": "Obando A \/ Obando D",
+                "country": "Honduras",
+                "country_code": "HND",
+                "abbreviation": "O\/O",
+                "qualifier": "home",
+                "players": [{
+                    "id": "sr:competitor:204499",
+                    "name": "Obando, Daniela",
+                    "country": "Honduras",
+                    "country_code": "HND",
+                    "abbreviation": "OBA"
+                }, {
+                    "id": "sr:competitor:210824",
+                    "name": "Obando, Alejandra",
+                    "country": "Honduras",
+                    "country_code": "HND",
+                    "abbreviation": "OBA"
+                }]
+            }, {
+                "id": "sr:competitor:850531",
+                "name": "Dibbs K \/ James J",
+                "country": "Jamaica",
+                "country_code": "JAM",
+                "abbreviation": "D\/J",
+                "qualifier": "away",
+                "players": [{
+                    "id": "sr:competitor:849783",
+                    "name": "James, Junmoke",
+                    "country": "USA",
+                    "country_code": "USA",
+                    "abbreviation": "JAM"
+                }, {
+                    "id": "sr:competitor:850519",
+                    "name": "Dibbs, Katherine",
+                    "country": "Jamaica",
+                    "country_code": "JAM",
+                    "abbreviation": "DIB"
+                }]
+            }],
+            "venue": {
+                "id": "sr:venue:26042",
+                "name": "Court 2",
+                "city_name": "Santo Domingo",
+                "country_name": "Dominican Republic",
+                "country_code": "DOM"
+            },
+            "estimated": true
+        },
+        "sport_event_status": {
+            "status": "not_started",
+            "match_status": "not_started"
+        }
+    }]
+}
