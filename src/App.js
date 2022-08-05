@@ -4,7 +4,8 @@ import Appbar from './component/appbar/Appbar';
 import Member from './component/member/Member';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from './component/home/Home';
-
+import Prediction from './component/prediction/Prediction';
+import Match from './component/prediction/Match';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/member" element={<Member />} />
+          <Route exact path="/prediction" element={<Prediction />}/>
         </Routes>
       </Router>
       

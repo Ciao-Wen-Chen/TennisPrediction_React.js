@@ -1,0 +1,28 @@
+.prediction{
+    min-height: 100vh;
+    text-align: left;
+    
+}
+.row{
+    margin: 0px 10px 0px 10px;
+}
+.label{
+    color: rgb(64, 64, 64);
+    padding: 20px 0px 0px;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.selectItem{
+    font-family: 'Varela Round';
+}
+.titleLabel{
+    color: rgb(36, 50, 98);
+    padding: 20px 0px 0px;
+    font-size: 25px;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}

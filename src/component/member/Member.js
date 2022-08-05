@@ -19,7 +19,7 @@ export default function Member() {
     const [error, setError] = useState(null);
 
     const submitClick=(e)=>{
-      e.preventDefault();
+      e.preventDefault(); //TODO
       const member={firstName, lastName, email, password, country, age};
       console.log(member);
       fetch("http://localhost:8080/api/member/registration",{
@@ -38,7 +38,8 @@ export default function Member() {
     }
 
   return (
-    <Container>
+    
+    <Container className="member">
         <Paper elevation={3} style={paperStyle}>
           <h1>Create An Account</h1>
     <Box

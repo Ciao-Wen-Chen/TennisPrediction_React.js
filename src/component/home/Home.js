@@ -35,25 +35,22 @@ export default function Home() {
                 p2, p2Country, p2Qualifier };
     }
 
-    const paperStyle={padding:'50px 20px', width:900, margin:'20px auto'}
+    const paperStyle={padding:'50px 20px', width:900, margin:'20px auto', flexGrow:1}
 
     return (
         // <Container>
         <Paper elevation={3} style={paperStyle}>
-
         <Grid container spacing={4}>
             
-                { gameSumAry.map(item => (
-                    <Grid item xs={4}>
-                    <GameCard row={createData(item.gameName, item.p1, item.p1Country, item.p1Qualifier,
-                        item.p2, item.p2Country, item.p2Qualifier)}/>
-                    </Grid>
-                ))}
+            { gameSumAry.map(item => (
+                <Grid item xs={4}>
+                <GameCard row={createData(item.gameName, item.p1, item.p1Country, item.p1Qualifier,
+                    item.p2, item.p2Country, item.p2Qualifier)}/>
+                </Grid>
+            ))}
             
         </Grid>
         </Paper> 
-        
         // </Container>
-
     ) 
 }

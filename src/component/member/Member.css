@@ -1,6 +1,11 @@
+
 p {
     font-family: proxima-soft, sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #ff4a4a
+}
+
+.member{
+    min-height: 100vh;
 }

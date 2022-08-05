@@ -62,9 +62,9 @@ export default function Appbar() {
                 'aria-labelledby': 'basic-button',
               }}
             >
-              <MenuItem onClick={handleClose}>My Profile</MenuItem>
+              <MenuItem onClick={handleClose} >My Profile</MenuItem>
               <MenuItem onClick={handleClose}>Logout</MenuItem>
-              <MenuItem onClick={handleClose}>Login</MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/member">Login</MenuItem>
               
             </Menu>
           </div>
@@ -75,5 +75,6 @@ export default function Appbar() {
         </Toolbar>
       </AppBar>
     </Box>
+
   );
 }
