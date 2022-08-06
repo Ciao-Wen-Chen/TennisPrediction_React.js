@@ -1,9 +1,13 @@
 import React, {state, useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Match from './Match'
 import PlayerOne from './PlayerOne';
 import PlayerTwo from './PlayerTwo';
 import './Prediction.css';
+import { useAsync } from "react-async"
+import Calculate from './Calculate';
+
 
 export default function Prediction() {
 
@@ -21,21 +25,26 @@ export default function Prediction() {
     function handlePrev(){
         setStep(step - 1);
     }
-
+    
     const handleSubmit=(e)=>{
-        console.log(formData);
-        fetch("http://localhost:8080/api/prediction",{
-        method:"POST",
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify(formData)
-      }).then((response)=>{
-        console.log("New match predicting")
-        console.log(response); 
-        return response.json()
-      }).then(data => {
-        console.log(data)
-        setWinner(data.p1Name)
-    });
+        
+        setStep(step + 1);
+        // console.log(formData);
+        // fetch("http://localhost:8080/api/prediction",{
+        // method:"POST",
+        // headers:{'Content-Type':'application/json'},
+        // body:JSON.stringify(formData)
+
+        // }).then(res => (res.ok ? res : Promise.reject(res)))
+        // .then((response)=>{console.log("New match predicting")
+        //     console.log(response); 
+        //     return response.json()
+
+        // }).then(data => {
+        //     console.log(data)
+        //     setWinner(data.p1Name)
+
+        // });
     }
 
     const conditionalComponent=()=>{
@@ -46,6 +55,8 @@ export default function Prediction() {
                 return <PlayerOne formData={formData} setFormData={setFormData} />;
             case 3:
                 return <PlayerTwo formData={formData} setFormData={setFormData} setWinner={setWinner} winner={winner}/>;
+            case 4:
+                return <Calculate formData={formData}/>
             default: 
         }
     }
@@ -67,9 +78,11 @@ export default function Prediction() {
             )
         }else if(step===3){
             return(
+                <>
                 <Button variant="contained" onClick={ handleSubmit }>
                     Start Prediction
                 </Button>
+                </>
             )
         }
         

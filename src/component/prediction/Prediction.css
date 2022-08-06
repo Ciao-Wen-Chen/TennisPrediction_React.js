@@ -1,7 +1,6 @@
 .prediction{
     min-height: 100vh;
-    text-align: left;
-    
+   
 }
 .row{
     margin: 0px 10px 0px 10px;
@@ -25,4 +24,7 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 5px;
+}
+.Loader{
+    margin: 80px;
 }
