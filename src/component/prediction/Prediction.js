@@ -13,6 +13,7 @@ export default function Prediction() {
         p1: 'Roberto Bautista Agut', p1Id: 105138, p1Rank: 19, p1Point: 1645, p1Hand: 'R', p1Height: 181, p1Fatigue: 3.8, p1Age: 31,
         p2: 'Taylor Harry Fritz', p2Id: 126203, p2Rank: 40, p2Point: 1090, p2Hand: 'R', p2Height: 193, p2Fatigue: 4, p2Age: 22,
     });
+    const [winner, setWinner]=useState('plauyer')
     
     function handleNext() {
         setStep(step + 1);
@@ -27,9 +28,14 @@ export default function Prediction() {
         method:"POST",
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(formData)
-      }).then(()=>{
+      }).then((response)=>{
         console.log("New match predicting")
-      })
+        console.log(response); 
+        return response.json()
+      }).then(data => {
+        console.log(data)
+        setWinner(data.p1Name)
+    });
     }
 
     const conditionalComponent=()=>{
@@ -39,7 +45,7 @@ export default function Prediction() {
             case 2: 
                 return <PlayerOne formData={formData} setFormData={setFormData} />;
             case 3:
-                return <PlayerTwo formData={formData} setFormData={setFormData} />;
+                return <PlayerTwo formData={formData} setFormData={setFormData} setWinner={setWinner} winner={winner}/>;
             default: 
         }
     }
@@ -74,7 +80,7 @@ export default function Prediction() {
             <div> {conditionalComponent()} </div>
             <div> {conditionalBtnBack()} </div>
             <div> {conditionalBtnNext()} </div>
-
+            
         </div>
     </>
    

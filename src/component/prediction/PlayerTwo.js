@@ -4,7 +4,7 @@ import { Paper } from '@material-ui/core';
 import Form from 'react-bootstrap/Form';
 import './Prediction.css'
 
-export default function PlayerTwo({ formData, setFormData }) {
+export default function PlayerTwo({ formData, setFormData, winner }) {
     const boxStyle = {
         width: '50%',
         margin: '1rem auto',
@@ -22,6 +22,7 @@ export default function PlayerTwo({ formData, setFormData }) {
             <Paper elevation={3} >
             <Box sx={ cellBoxStyle }>
                 <Form.Label className="titleLabel" >Player Two</Form.Label>
+                <Form.Label className="titleLabel" >{winner}</Form.Label>
                 <br/>
                 <Paper elevation={3} style={cellPaperStyle} >
                     <Form.Label className="label">Player Name</Form.Label>
