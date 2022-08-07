@@ -13,7 +13,7 @@ export default function Match({ formData, setFormData }) {
         padding: '2rem 0',
     }
     const cellBoxStyle = { padding: '10px 50px 50px' , textAlign: 'left', fontFamily:'Varela Round'}
-    
+    const cellPaperStyle = { padding:'0px 20px 30px', margin:'10px auto' }
     return (
     <div className="prediction">
         <Box
@@ -21,6 +21,8 @@ export default function Match({ formData, setFormData }) {
             >
         <Paper elevation={3} >
         <Box sx={ cellBoxStyle }>
+        <Form.Label className="titleLabel">Prediction (1/3) <span className="subtitle">&#10145; Input Tourney Information</span></Form.Label>
+        <Paper elevation={3} style={cellPaperStyle}>
             <Form.Label className="label">Tourney Name</Form.Label>
                 <TextInput 
                 onChange={(e) => {
@@ -77,6 +79,7 @@ export default function Match({ formData, setFormData }) {
                     value={ formData.matchLevel }
                     placeholder="e.g. G"
             />
+            </Paper>
         </Box>
         </Paper>
         </Box>

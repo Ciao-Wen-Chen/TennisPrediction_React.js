@@ -21,8 +21,8 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                 >
             <Paper elevation={3} >
             <Box sx={ cellBoxStyle }>
-                <Form.Label className="titleLabel" >Player Two</Form.Label>
-                <Form.Label className="titleLabel" >{winner}</Form.Label>
+                <Form.Label className="titleLabel" >Prediction (3/3) <span className="subtitle">&#10145; Input Player Two Infomation</span></Form.Label>
+                
                 <br/>
                 <Paper elevation={3} style={cellPaperStyle} >
                     <Form.Label className="label">Player Name</Form.Label>

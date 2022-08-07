@@ -7,7 +7,7 @@ import PlayerTwo from './PlayerTwo';
 import './Prediction.css';
 import { useAsync } from "react-async"
 import Calculate from './Calculate';
-
+import { Paper } from '@material-ui/core';
 
 export default function Prediction() {
 
@@ -27,24 +27,7 @@ export default function Prediction() {
     }
     
     const handleSubmit=(e)=>{
-        
         setStep(step + 1);
-        // console.log(formData);
-        // fetch("http://localhost:8080/api/prediction",{
-        // method:"POST",
-        // headers:{'Content-Type':'application/json'},
-        // body:JSON.stringify(formData)
-
-        // }).then(res => (res.ok ? res : Promise.reject(res)))
-        // .then((response)=>{console.log("New match predicting")
-        //     console.log(response); 
-        //     return response.json()
-
-        // }).then(data => {
-        //     console.log(data)
-        //     setWinner(data.p1Name)
-
-        // });
     }
 
     const conditionalComponent=()=>{
@@ -60,41 +43,79 @@ export default function Prediction() {
             default: 
         }
     }
+    const btnStyleBack1={ position:"absolute", bottom:"42%", left:"12%"}
     const conditionalBtnBack=()=>{
-        if(step>1){
+        if(step>1&&step<4){
             return (
-                <Button variant="contained" onClick={ handlePrev }>
-                    Back
-                </Button>
+                // variant="contained"
+                <div style={btnStyleBack1}>
+                <div class="iconR" onClick={ handlePrev }>
+                    <div class="arrowR"></div>
+                </div>
+                </div>
+                // <Button variant="contained" onClick={ handlePrev }>
+                //     Back
+                // </Button>
             )
         }
     }
+    const btnStyleNext1={ position:"absolute", top:"35%", left:"80%" }
+    const btnStyleNext2={ position:"absolute", bottom:"38%", left:"80%" }
+    const btnStyleNext3={ position:"absolute", bottom:"30%", left:"80%"}
+
     const conditionalBtnNext=()=>{
-        if(step<3){
+        if(step===1){
             return(
-                <Button variant="contained" onClick={ handleNext }>
-                    >>>
-                </Button>
+                <div style={btnStyleNext1}>
+                {/* <Button className="BtnStyleSelf" onClick={ handleNext }>
+                    <span style={{fontSize: "30px", fontFamily: 'Varela Round', color:"#fff"}}>Next</span>
+                </Button> */}
+                <div class="icon" onClick={ handleNext }>
+                    <div class="arrow"></div>
+                </div>
+                </div>
+            )
+        }else if(step<3){
+            return(
+            <div style={btnStyleNext2}>
+            <div class="icon" onClick={ handleNext }>
+                    <div class="arrow"></div>
+            </div>
+            </div>
             )
         }else if(step===3){
             return(
-                <>
-                <Button variant="contained" onClick={ handleSubmit }>
+                <div style={btnStyleNext3}>
+                <div class="parent">
+                <button class="round-6" onClick={ handleSubmit }>Start</button>
+                </div>
+                {/* <Button variant="contained" onClick={ handleSubmit }>
                     Start Prediction
-                </Button>
-                </>
+                </Button> */}
+                </div>
             )
         }
-        
     }
+    const btnStyleNext={
+        position:"absolute", 
+        top:"70%", 
+        left:"70%"
+    }
+    const btnStyleBack={
+        position:"absolute", 
+        top:"60%", 
+        left:"30%"
+    }
+    
+
   return (
     <>
         <div>
             <div> {conditionalComponent()} </div>
             <div> {conditionalBtnBack()} </div>
             <div> {conditionalBtnNext()} </div>
-            
         </div>
+
     </>
    
   )

@@ -52,8 +52,8 @@ export default function Calculate({formData}) {
                 <GridLoader color={"#F89C06"} loading={loading} size={50} />
                 </div>
             )
-        }else{
-            return <Result p1={p1Name} p2={p2Name} p1WP={p1WP} p2={p2WP} />
+        }else{ 
+            return <Result p1={p1Name} p2={p2Name} p1WP={p1WP} p2WP={p2WP} formData={formData}/>
         }
     }
 
