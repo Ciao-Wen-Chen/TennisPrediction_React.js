@@ -24,6 +24,7 @@ export default function Match({ formData, setFormData }) {
         <Form.Label className="titleLabel">Prediction (1/3) <span className="subtitle">&#10145; Input Tourney Information</span></Form.Label>
         <Paper elevation={3} style={cellPaperStyle}>
             <Form.Label className="label">Tourney Name</Form.Label>
+            {/* https://react-select.com/home */}
                 <TextInput 
                 onChange={(e) => {
                     setFormData({

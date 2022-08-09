@@ -1,10 +1,14 @@
 import * as React from 'react';
-import{useState} from 'react';
+import{useState, useMemo} from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import {Container,Paper,Button,FormHelperText} from '@material-ui/core';
+// import {Select} from '@mantine/core';
+import Select from 'react-select'
 import './Member.css';
 import {Link} from "react-router-dom";
+import countryList from 'react-select-country-list'
+import {useNavigate} from 'react-router-dom'
 
 export default function Member() {
 
@@ -17,6 +21,17 @@ export default function Member() {
     const[country, setCountry] = useState('');
     const[age, setAge] = useState('');
     const [error, setError] = useState(null);
+    
+    const navigate = useNavigate();
+    function CountrySelector() {
+      const [value, setValue] = useState('')
+      const options = useMemo(() => countryList().getData(), [])
+      const changeHandler = value => {
+        setCountry(value)
+        setValue(value)
+      }
+      return <Select options={options} value={value} onChange={changeHandler} />
+    }
 
     const submitClick=(e)=>{
       e.preventDefault(); //TODO
@@ -29,8 +44,14 @@ export default function Member() {
       }).then(()=>{
         console.log("New member registered")
       })
-
+      const modal = document.querySelector(".modal")
+      const closeBtn = document.querySelector(".close")
+      modal.style.display = "block";
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      })
     }
+
 
     function isValidEmail(email) {
       if(email == null || email == "") return true;
@@ -38,7 +59,7 @@ export default function Member() {
     }
 
   return (
-    
+    <>
     <Container className="member">
         <Paper elevation={3} style={paperStyle}>
           <h1>Create An Account</h1>
@@ -70,10 +91,9 @@ export default function Member() {
 
         <TextField required id="password" label="Password"
                   value={password} onChange={(e)=>setPassword(e.target.value)}/>
-
-        <TextField id="country" label="Country of residence"
-                  value={country} onChange={(e)=>setCountry(e.target.value)}/>
-                  
+        <div style={{width:"72%" ,margin:"0px 0px 0px 80px"}}>
+          {CountrySelector()}
+        </div>
         <TextField id="age" label="Age" type="number" 
                   value={age} onChange={(e)=>{
                     if(e.target.value<0){
@@ -88,5 +108,12 @@ export default function Member() {
 
       </Paper>
     </Container>
+    <div class="modal">
+      <div class="modal_content">
+          <span class="close">&times;</span>
+          <div class="notifyFont">Please check your E-mail to verify your account &#128231;</div>
+      </div>
+    </div>
+</>
   );
 }

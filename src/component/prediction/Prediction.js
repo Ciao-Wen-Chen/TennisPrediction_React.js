@@ -96,18 +96,16 @@ export default function Prediction() {
             )
         }
     }
-    const btnStyleNext={
-        position:"absolute", 
-        top:"70%", 
-        left:"70%"
-    }
-    const btnStyleBack={
-        position:"absolute", 
-        top:"60%", 
-        left:"30%"
-    }
-    
-
+    // const btnStyleNext={
+    //     position:"absolute", 
+    //     top:"70%", 
+    //     left:"70%"
+    // }
+    // const btnStyleBack={
+    //     position:"absolute", 
+    //     top:"60%", 
+    //     left:"30%"
+    // }
   return (
     <>
         <div>

@@ -253,7 +253,7 @@ body{
 
 .arrow {
   position: absolute;
-  top: 40%;
+  top: 65%;
   width: 90%;
   height: 10px;
   background-color: #fff;
@@ -352,7 +352,6 @@ body{
 
 .parent button {
   background-color: #fdba04;
-  
   color: white;
   border: 3px solid #fff;
   padding: 5px;

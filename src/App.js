@@ -8,6 +8,7 @@ import Prediction from './component/prediction/Prediction';
 import Match from './component/prediction/Match';
 import Result from './component/prediction/Result';
 import Calculate from './component/prediction/Calculate';
+import Confirm from './component/member/Confirm';
 
 
 
@@ -17,8 +18,11 @@ function App() {
       <Router>
         <Appbar />
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+
+          
+          <Route exact path="/liveGame" element={<Home />} />
           <Route exact path="/member" element={<Member />} />
+          <Route exact path="/member/confirm" element={<Confirm />} />
           <Route exact path="/prediction" element={<Prediction />}/>
           <Route exact path="/prediction/result" element={<Result />}/>
           <Route exact path="/prediction/calculation" element={<Calculate />}/>
