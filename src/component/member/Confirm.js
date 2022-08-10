@@ -24,11 +24,12 @@ export default function Confirm() {
         })
         .then(data=>{
             setemailVerifyState(data.message)
+            console.log("message"+emailVerifyState)
         });
-    });
+    },[]);
 
     const conditionalRender=()=>{
-        if(emailVerifyState==="confirm"){
+        if(emailVerifyState==="confirmed"){
             return(
                 <div class="modal_content">
                     <div class="notifyFont">

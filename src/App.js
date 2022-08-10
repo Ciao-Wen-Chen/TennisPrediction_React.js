@@ -9,7 +9,7 @@ import Match from './component/prediction/Match';
 import Result from './component/prediction/Result';
 import Calculate from './component/prediction/Calculate';
 import Confirm from './component/member/Confirm';
-
+import Root from './component/root/Root';
 
 
 function App() {
@@ -18,9 +18,8 @@ function App() {
       <Router>
         <Appbar />
         <Routes>
-
-          
-          <Route exact path="/liveGame" element={<Home />} />
+          <Route exact path="/welcome" element={<Root />} />
+          <Route exact path="/home" element={<Home />} />
           <Route exact path="/member" element={<Member />} />
           <Route exact path="/member/confirm" element={<Confirm />} />
           <Route exact path="/prediction" element={<Prediction />}/>

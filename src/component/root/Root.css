@@ -1,0 +1,111 @@
+
+.rootPage{
+    min-height: 100vh;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color:#f0c911;
+	border-radius:10px;
+	border:2px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 26px;
+	text-decoration:none;
+	text-shadow:0px -1px 4px #ded17c;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	background-color:#f2ab1e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.carousel{
+    /* border: #c92200 solid 2px; */
+    /* background-color: black; */
+    /* width: 80%; */
+}
+.bodySection{
+    width: 70%;
+    /* border: #c92200 solid 2px; */
+    background-color: rgb(255, 255, 255);
+    margin-left: 15%;
+    font-family: 'Varela Round';
+}
+.fist_welcome_pic{
+    width: 100%;
+}
+.caption{
+    position: relative;
+    text-align: left;
+    margin-top:100%;
+    right: 10%;
+    width: 100%;
+}
+.first_caption{
+    font-weight: bold;
+}
+.first_caption_sub{
+    font-family: 'Varela Round';
+    color: #fff;
+    padding: 1px;
+}
+.w3-opacity{
+    width: 90%;
+    margin-left: 20px;
+}
+.headerSection{
+    padding: 15px;
+}
+
+.title_in_welcome_header{
+    font-weight:bolder;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    color: rgb(36, 50, 98);
+}
+
+.content_in_welcome_header{
+    font-weight:bolder;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    color: rgb(89, 95, 116);
+}
+
+.Btn_tryme{
+
+}
+.Btn_tryme {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#241e3b;
+	font-size:24px;
+	font-weight:bold;
+	padding:13px 21px;
+	text-decoration:none;
+	text-shadow:0px 1px 10px #ffee66;
+}
+.Btn_tryme:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.Btn_tryme:active {
+	position:relative;
+	top:1px;
+}

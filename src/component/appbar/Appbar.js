@@ -23,11 +23,14 @@ export default function Appbar() {
     setAnchorEl(null);
   };
 
+  
+  const accountIcon={ position:"relative",float:"right"}
+
   return (
     <Box sx={{ flexGrow: 1}}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -35,39 +38,65 @@ export default function Appbar() {
             sx={{ mr: 2 }}
             >
             <Sidebar/>
-          </IconButton>
+          </IconButton> */}
           
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <img src="/logo.png" alt="logo" width="300"/>
-          </Typography>
+          <div variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <a href="/welcome"><img src="/logo.png" alt="logo" width="300"/></a>
+          </div>
 
-          <div>
+          <div className="menubar">
             <Button
               id="basic-button"
               color="inherit"
-              aria-controls={open ? 'basic-menu' : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? 'true' : undefined}
-              onClick={handleClick}
-              variant="outlined"
+              href="/prediction"
+              style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
             >
-              Account
+              Prediction
             </Button>
-            <Menu
-              id="basic-menu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              MenuListProps={{
-                'aria-labelledby': 'basic-button',
-              }}
-            >
-              <MenuItem onClick={handleClose} >My Profile</MenuItem>
-              <MenuItem onClick={handleClose}>Logout</MenuItem>
-              <MenuItem onClick={handleClose} component={Link} to="/member">Login</MenuItem>
-              
-            </Menu>
           </div>
+
+          <div className="menubar">
+            <Button
+              id="basic-button"
+              color="inherit"
+              href="/home"
+              style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
+            >
+              In-Play
+            </Button>
+          </div>
+
+
+          <Box sx={{ flexGrow: 3}}>
+            <div style={accountIcon}>
+              <Button
+                id="basic-button"
+                color="inherit"
+                aria-controls={open ? 'basic-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClick}
+                variant="outlined"
+              >
+                Account
+              </Button>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+              >
+                <MenuItem onClick={handleClose} >My Profile</MenuItem>
+                <MenuItem onClick={handleClose}>Log in</MenuItem>
+                <MenuItem onClick={handleClose}>Sign out</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/member">Sign up</MenuItem>
+                
+              </Menu>
+            </div>
+          </Box>
 
           {/* to="/member" */}
 
