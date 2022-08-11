@@ -34,25 +34,40 @@ export default function Confirm() {
                 <div class="modal_content">
                     <div class="notifyFont">
                         Congrats! You can start your journey now 
+                        Please Log in.
                     </div>
+                    <a href="/login" class="myButton">Log in</a>
                 </div>
             )
         }else{
             return(
-                <div class="emial_verify">
-                    <div class="emial_verify_font">
-                    <span class="importantfont">Oh no, it is not a valid link.</span><br></br>
-                    Do not worry, this might happen when:<br></br>
-                    <div class="emial_verify_font" style={{ textAlign:"left", margin:"3px", color:"#938558"}}>
-                    <li>This email has already been confirmed</li>
-                    <li>Token expired</li>
-                    <li>You accidentally modify the URL link</li>
-                    <a href="/member" class="myButton">Sign up again</a>
+                <div class="modal_content">
+                    <div class="notifyFont">
+                        Congrats! You can start your journey now, <br></br> 
+                        Please Log in.
+                        
                     </div>
+                    <div class="btn_login" style={{position:"relative",marginRight:"8%"}}>
+                        <a href="/login" class="myButton">Log in</a>
                     </div>
+                    
                 </div>
-
             )
+            // return(
+            //     <div class="emial_verify">
+            //         <div class="emial_verify_font">
+            //         <span class="importantfont">Oh no, it is not a valid link.</span><br></br>
+            //         Do not worry, this might happen when:<br></br>
+            //         <div class="emial_verify_font" style={{ textAlign:"left", margin:"3px", color:"#938558"}}>
+            //         <li>This email has already been confirmed</li>
+            //         <li>Token expired</li>
+            //         <li>You accidentally modify the URL link</li>
+            //         <a href="/member" class="myButton">Sign up again</a>
+            //         </div>
+            //         </div>
+            //     </div>
+
+            // )
         }
     }
     
