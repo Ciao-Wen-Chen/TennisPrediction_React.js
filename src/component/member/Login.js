@@ -1,6 +1,6 @@
 import * as React from 'react';
 import useAuth from '../../hooks/useAuth'
-import{useState, useMemo} from 'react';
+import{useRef, useState, useMemo} from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import {Container,Paper,Button,FormHelperText} from '@material-ui/core';
@@ -8,18 +8,16 @@ import axios from 'axios';
 import Select from 'react-select'
 import './Member.css';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useLocalState } from '../util/useLocalState';
 
 export default function Login() {
 
-  const setAutho = useAuth();
+  const [email, setEmail]=useState('');
+  const [password, setPassword]=useState('');
+  const [access_token, setAccess_token]=useLocalState('', "access_token");
 
   const navigate = useNavigate();
   const location = useLocation();
-  const from = location.state?.from?.pathname || "/";
-
-  const [email, setEmail]=useState('');
-  const [password, setPassword]=useState('');
-  const [access_token, setAccessToken] = useState('');
 
   const loginPayload = {
     "email": email,
@@ -27,16 +25,25 @@ export default function Login() {
   }
 
   const submitClick=(e)=>{
-    fetch("http://localhost:8080/login",{
+    console.log("sending request")
+    fetch("http://localhost:8080/api/login",{
       method:"POST",
       headers:{'Content-Type':'application/x-www-form-urlencoded'},
       body: new URLSearchParams(loginPayload)
     })
-    .then((response) => Promise.all([response.json(), response.headers]))
-    .then((data)=> {
-          
-
-      })
+    .then((response) => {
+      if (response.status === 200) return response.json();
+      else if (response.status === 401 || response.status === 403) {
+        console.log("Invalid username or password");
+      } else {
+        console.log( "Something went wrong");
+      }
+    })
+    .then((data) => {
+        console.log(data.access_token)
+        setAccess_token(data.access_token)
+        window.location.href="/welcome"
+    });
   }
 
   const paperStyle={padding:'50px 20px', width:600, margin:'20px auto'}

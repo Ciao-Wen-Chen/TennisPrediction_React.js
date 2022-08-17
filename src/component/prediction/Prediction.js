@@ -9,8 +9,6 @@ import { useAsync } from "react-async"
 import Calculate from './Calculate';
 import { Paper } from '@material-ui/core';
 
-
-
 export default function Prediction() {
 
     const[step, setStep] = useState(1)

@@ -10,6 +10,8 @@ import {Link} from "react-router-dom";
 import countryList from 'react-select-country-list'
 import {useNavigate} from 'react-router-dom'
 
+
+
 export default function Member() {
 
     const paperStyle={padding:'50px 20px', width:600, margin:'20px auto'}
@@ -103,7 +105,7 @@ export default function Member() {
                     setAge(e.target.value)}} />
         </div>
         <Button variant="contained" onClick={submitClick} >Submit</Button>
-        <Link variant="contained" to="/home">Home</Link>
+        {/* <Link variant="contained" to="/home">Home</Link> */}
     </Box> 
 
       </Paper>
