@@ -17,6 +17,7 @@ export default function Login() {
   const [password, setPassword]=useState('');
   const [access_token, setAccess_token]=useLocalState('', "access_token"); //value, key
   const [user, setUser]=useLocalUser('', "access_token"); //value, key
+  const [warnMsg, setWarnMag]=useState('');
   //const {setAuth} = useAuth();
 
   const loginPayload = {
@@ -34,8 +35,10 @@ export default function Login() {
     .then((response) => {
       if (response.status === 200) return response.json();
       else if (response.status === 401 || response.status === 403) {
+        setWarnMag("Incorrect email or password, please try again");
         console.log("Invalid username or password");
       } else {
+        setWarnMag("Incorrect email or password, please try again");
         console.log( "Something went wrong");
       }
     })
@@ -70,7 +73,7 @@ export default function Login() {
 
               <TextField required id="password" label="Password"
                         value={password} onChange={(e)=>setPassword(e.target.value)}/>
-              
+              <p>{warnMsg}</p>
               </div>
               <Button variant="contained" onClick={submitClick} >Submit</Button>
           </Box> 

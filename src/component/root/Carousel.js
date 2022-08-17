@@ -2,10 +2,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import './Root.css';
 
 function UncontrolledExample() {
+  var interval = 1500
   return (
     <>
-        <Carousel slide={false}>
-        <Carousel.Item>
+        <Carousel slide={true}>
+        <Carousel.Item interval={interval}>
             <img
               className="fist_welcome_pic"
               src="/moneyTennis_crop.jpeg"
@@ -29,7 +30,7 @@ function UncontrolledExample() {
             </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item interval={interval}>
             <img
               className="fist_welcome_pic"
               src="/deepLearning_crop.jpeg"
@@ -54,7 +55,7 @@ function UncontrolledExample() {
             </Carousel.Caption>
           </Carousel.Item>
           
-          <Carousel.Item>
+          <Carousel.Item interval={interval}>
             <img
               className="fist_welcome_pic"
               src="/liveGame_crop.jpeg"
@@ -78,9 +79,6 @@ function UncontrolledExample() {
               
             </Carousel.Caption>
           </Carousel.Item>
-
-          
-          
         </Carousel>
     </>
   );

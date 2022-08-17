@@ -11,19 +11,46 @@ import MenuItem from '@mui/material/MenuItem';
 import {Link} from "react-router-dom";
 import 'react-pro-sidebar/dist/css/styles.css';
 import Sidebar from './Sidebar';
-
+import { useLocalUser } from '../util/useLocalUser';
+import {ROLES} from "../../App";
 
 export default function Appbar() {
+
+  const [user, setuser] = useLocalUser('','access_token')
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  // const handleClose = (state) => {
+  //   if(state==="login"){
+  //     localStorage.setItem("token", "XXX");
+  //     localStorage.setItem("user", "USER");
+  //   }
+  //   setAnchorEl(null);
 
+  // };
+  function handleClose(state){
+      if(state==="login"){
+        localStorage.clear();
+        localStorage.clear();
+        window.location.href="/welcome";
+      }
+      setAnchorEl(null);
   
+    };
+
+  const conditionalRender=()=>{
+    if(ROLES[user]===300){
+      return <MenuItem onClick={(event)=>handleClose("login")}>Log out</MenuItem>
+    }else{
+      return(
+      <>
+      <MenuItem onClick={(event)=>handleClose("")} component={Link} to="/login">Log in</MenuItem>          
+      <MenuItem onClick={(event)=>handleClose("")} component={Link} to="/member">Register</MenuItem>
+      </>)
+    }
+  }
   const accountIcon={ position:"relative",float:"right"}
 
   return (
@@ -90,10 +117,10 @@ export default function Appbar() {
                 }}
               >
                 {/* <MenuItem onClick={handleClose} >My Profile</MenuItem> */}
-                <MenuItem onClick={handleClose} component={Link} to="/login">Log in</MenuItem>
+                {/* <MenuItem onClick={handleClose} component={Link} to="/login">Log in</MenuItem>
                 <MenuItem onClick={handleClose}>Log out</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/member">Register</MenuItem>
-                
+                <MenuItem onClick={handleClose} component={Link} to="/member">Register</MenuItem> */}
+                {conditionalRender()}
               </Menu>
             </div>
           </Box>
