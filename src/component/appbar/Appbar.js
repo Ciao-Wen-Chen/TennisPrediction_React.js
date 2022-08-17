@@ -89,10 +89,10 @@ export default function Appbar() {
                   'aria-labelledby': 'basic-button',
                 }}
               >
-                <MenuItem onClick={handleClose} >My Profile</MenuItem>
-                <MenuItem onClick={handleClose}>Log in</MenuItem>
-                <MenuItem onClick={handleClose}>Sign out</MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/member">Sign up</MenuItem>
+                {/* <MenuItem onClick={handleClose} >My Profile</MenuItem> */}
+                <MenuItem onClick={handleClose} component={Link} to="/login">Log in</MenuItem>
+                <MenuItem onClick={handleClose}>Log out</MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="/member">Register</MenuItem>
                 
               </Menu>
             </div>

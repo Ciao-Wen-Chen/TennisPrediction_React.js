@@ -13,6 +13,10 @@ import Root from './component/root/Root';
 import Login from './component/member/Login';
 import RequireAuth from './component/RequireAuth'
 
+export const ROLES = {
+  "USER":200,
+  "MEMBER_ROLE":300
+}
 function App() {
   return (
     <div className="App" style={{ backgroundImage: "url(/back.png)" ,  backgroundPosition: 'center',} } >
@@ -28,9 +32,13 @@ function App() {
           <Route exact path="/member/confirm" element={<Confirm />} />
 
           {/* member */}
-          <Route element={<RequireAuth/ >}>
+          <Route element={ <RequireAuth allowedRoles={[ ROLES.MEMBER_ROLE ]} />}>
             <Route exact path="/prediction" element={<Prediction />}/>
+          </Route>
+          <Route element={ <RequireAuth allowedRoles={[ ROLES.MEMBER_ROLE ]} />}>
             <Route exact path="/prediction/result" element={<Result />}/>
+          </Route>
+          <Route element={ <RequireAuth allowedRoles={[ ROLES.MEMBER_ROLE ]} />}>
             <Route exact path="/prediction/calculation" element={<Calculate />}/>
           </Route>
         </Routes>

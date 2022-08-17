@@ -1,5 +1,5 @@
 import * as React from 'react';
-import useAuth from '../../hooks/useAuth'
+//import useAuth from '../../hooks/useAuth'
 import{useRef, useState, useMemo} from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -9,15 +9,15 @@ import Select from 'react-select'
 import './Member.css';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useLocalState } from '../util/useLocalState';
+import { useLocalUser } from '../util/useLocalUser';
 
 export default function Login() {
 
   const [email, setEmail]=useState('');
   const [password, setPassword]=useState('');
-  const [access_token, setAccess_token]=useLocalState('', "access_token");
-
-  const navigate = useNavigate();
-  const location = useLocation();
+  const [access_token, setAccess_token]=useLocalState('', "access_token"); //value, key
+  const [user, setUser]=useLocalUser('', "access_token"); //value, key
+  //const {setAuth} = useAuth();
 
   const loginPayload = {
     "email": email,
@@ -42,7 +42,8 @@ export default function Login() {
     .then((data) => {
         console.log(data.access_token)
         setAccess_token(data.access_token)
-        window.location.href="/welcome"
+        setUser(data.access_token)
+        window.location.href="/prediction"
     });
   }
 
