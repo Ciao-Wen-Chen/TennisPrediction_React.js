@@ -26,7 +26,7 @@ export default function Member() {
     
     const navigate = useNavigate();
     function CountrySelector() {
-      const [value, setValue] = useState('')
+      const [value, setValue] = useState('')   
       const options = useMemo(() => countryList().getData(), [])
       const changeHandler = value => {
         setCountry(value)

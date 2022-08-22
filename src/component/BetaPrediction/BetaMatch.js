@@ -1,14 +1,12 @@
 import React, {useState, useMemo} from 'react'
 import { Box, TextInput, Select } from '@mantine/core';
 import { Paper } from '@material-ui/core';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import './Prediction.css'
-import match_names from './match_list.json'
-import small_match_names from './smallerDataSet.json'
+import '../prediction/Prediction.css'
+import match_names from '../prediction/match_list.json'
 import Selector from 'react-select'
 
-export default function Match({ formData, setFormData }) {
+export default function BetaMatch({ formData, setFormData }) {
     const boxStyle = {
         width: '50%',
         margin: '1rem auto',
@@ -29,21 +27,13 @@ export default function Match({ formData, setFormData }) {
         const [value, setValue] = useState('')
         const [matchName, setMatchName] = useState('')
         const matches = useMemo(() => processData(match_names), []);
-
         console.log(processData(match_names))
         console.log(matches)
-        // const changeHandler = e => {
-        //     setMatchName(value)
-        //     setValue(value)
-        //     setFormData({ ...formData, matchName: e.target.value, }); 
-        // }
         return <Selector options={matches} value={value.value} onChange={(value) => {
             console.log(value["value"]);
             setFormData({ ...formData, matchName: value["value"]});
         }} />
-        
     }
-
 
     const cellBoxStyle = { padding: '10px 50px 50px' , textAlign: 'left', fontFamily:'Varela Round'}
     const cellPaperStyle = { padding:'0px 20px 30px', margin:'10px auto' }
@@ -86,10 +76,8 @@ export default function Match({ formData, setFormData }) {
                     value={ formData.matchSurface }
                     placeholder="e.g. Grass"
             />
-            <Form.Label className="label"> Choose Tournament Level&nbsp;
-                <span class="w3-tag w3-round w3-green w3-border w3-border-white">premium</span>
-            </Form.Label>
-            <Select className="selectItem"
+            {/* <Form.Label className="label">Choose Tournament Level</Form.Label>
+                <Select className="selectItem"
                     data={[
                     { value: 'A', label: 'A' },
                     { value: 'C', label: 'C' },
@@ -104,7 +92,7 @@ export default function Match({ formData, setFormData }) {
                     }}
                     value={ formData.matchLevel }
                     placeholder="e.g. G"
-            />
+            /> */}
             </Paper>
         </Box>
         </Paper>

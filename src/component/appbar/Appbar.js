@@ -75,10 +75,10 @@ export default function Appbar() {
             <Button
               id="basic-button"
               color="inherit"
-              href="/prediction"
+              href="/home"
               style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
             >
-              Prediction
+              In-Play
             </Button>
           </div>
 
@@ -86,10 +86,21 @@ export default function Appbar() {
             <Button
               id="basic-button"
               color="inherit"
-              href="/home"
+              href="/prediction-trial"
               style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
             >
-              In-Play
+              Prediction Trial
+            </Button>
+          </div>
+
+          <div className="menubar">
+            <Button
+              id="basic-button"
+              color="inherit"
+              href="/prediction"
+              style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
+            >
+              Prediction
             </Button>
           </div>
 

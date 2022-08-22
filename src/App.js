@@ -5,13 +5,15 @@ import Member from './component/member/Member';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from './component/home/Home';
 import Prediction from './component/prediction/Prediction';
+import BetaPrediction from './component/BetaPrediction/BetaPrediction';
 import Match from './component/prediction/Match';
 import Result from './component/prediction/Result';
 import Calculate from './component/prediction/Calculate';
 import Confirm from './component/member/Confirm';
 import Root from './component/root/Root';
 import Login from './component/member/Login';
-import RequireAuth from './component/RequireAuth'
+import RequireAuth from './component/RequireAuth';
+import PeudoCase from './component/prediction/PeudoCase';
 
 export const ROLES = {
   "USER":200,
@@ -30,6 +32,8 @@ function App() {
           <Route exact path="/login" element={<Login />} />
 
           <Route exact path="/member/confirm" element={<Confirm />} />
+          <Route exact path="/pseudo" element={<PeudoCase />} />
+          <Route exact path="/prediction-trial" element={<BetaPrediction />} />
 
           {/* member */}
           <Route element={ <RequireAuth allowedRoles={[ ROLES.MEMBER_ROLE ]} />}>

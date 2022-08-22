@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState,useMemo,useEffect} from 'react'
 import { Box, TextInput, Select } from '@mantine/core';
 import { Paper } from '@material-ui/core';
 import Form from 'react-bootstrap/Form';
-import './Prediction.css'
+import '../prediction/Prediction.css'
+import player_names from '../prediction/player_list.json'
+import player_namesA from '../prediction/player_listA.json'
+import player_namesB from '../prediction/player_listB.json'
+import Selector from 'react-select'
 
-export default function PlayerTwo({ formData, setFormData, winner }) {
+export default function BetaPlayerTwo({ formData, setFormData, winner }) {
     const boxStyle = {
         width: '50%',
         margin: '1rem auto',
@@ -25,7 +29,7 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                 
                 <br/>
                 <Paper elevation={3} style={cellPaperStyle} >
-                    <Form.Label className="label">The first letter of player's name</Form.Label>
+                    <Form.Label className="label">Player II Name</Form.Label>
                         <TextInput 
                         onChange={(e) => {
                             console.log(e);
@@ -80,9 +84,7 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. 1645"
                         required
                     />
-                    <Form.Label className="label">Player II Dominant Hand&nbsp;
-                        <span class="w3-tag w3-round w3-green w3-border w3-border-white">premium</span>
-                    </Form.Label>
+                    {/* <Form.Label className="label">Player II Dominant Hand</Form.Label>
                     <Select className="selectItem"
                         data={[
                         { value: 'R', label: 'Right' },
@@ -94,10 +96,8 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         }}
                         value={ formData.p2Hand }
                         placeholder="e.g. Right"
-                    />
-                    <Form.Label className="label">Player II Height (cm)&nbsp;
-                        <span class="w3-tag w3-round w3-green w3-border w3-border-white">premium</span>
-                    </Form.Label>
+                    /> */}
+                    {/* <Form.Label className="label">Player II Height (cm)</Form.Label>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -110,10 +110,7 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. 181"
                         required
                     />
-                    <Form.Label className="label">Player Fatigue&nbsp;
-                        <span class="w3-tag w3-round w3-green w3-border w3-border-white">premium</span><br></br>
-                        <span style={{"color":"grey"}}>(We will check the set number of each match the player took last five match)</span>
-                    </Form.Label>
+                    <Form.Label className="label">Player Fatigue</Form.Label>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -126,9 +123,7 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. 3.8"
                         required
                     />
-                    <Form.Label className="label">Player Age&nbsp;
-                        <span class="w3-tag w3-round w3-green w3-border w3-border-white">premium</span>
-                    </Form.Label>
+                    <Form.Label className="label">Player Age</Form.Label>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -140,7 +135,7 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         value={formData.p2Age}
                         placeholder="e.g. 31"
                         required
-                    />
+                    /> */}
                 </Paper>
             </Box>
             </Paper>
