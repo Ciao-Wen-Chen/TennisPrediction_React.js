@@ -3,9 +3,9 @@ import { Box, TextInput, Select } from '@mantine/core';
 import { Paper } from '@material-ui/core';
 import Form from 'react-bootstrap/Form';
 import '../prediction/Prediction.css'
-import player_names from '../prediction/player_list.json'
-import player_namesA from '../prediction/player_listA.json'
-import player_namesB from '../prediction/player_listB.json'
+import player_names from '../predictionData/player_list.json'
+import player_namesA from '../predictionData/player_listA.json'
+import player_namesB from '../predictionData/player_listB.json'
 import Selector from 'react-select'
 
 export default function BetaPlayerTwo({ formData, setFormData, winner }) {
@@ -17,7 +17,9 @@ export default function BetaPlayerTwo({ formData, setFormData, winner }) {
     }
     const cellBoxStyle = { padding: '10px 50px 60px' , textAlign: 'left', fontFamily:'Varela Round'}
     const cellPaperStyle = { padding:'0px 20px 30px', margin:'10px auto' }
-
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      };
     return (
         <div className="prediction">
             <Box
@@ -43,7 +45,8 @@ export default function BetaPlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. Taylor Harry Fritz"
                         required
                     />
-                    <Form.Label className="label">Player II ID</Form.Label>
+                    <Form.Label className="label">Player II ID</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")} >&nbsp;search player ID</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -58,7 +61,8 @@ export default function BetaPlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. 105138"
                         required
                     />
-                    <Form.Label className="label">Player II Rank</Form.Label>
+                    <Form.Label className="label">Player II Rank</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")} >&nbsp;search player Rank</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {

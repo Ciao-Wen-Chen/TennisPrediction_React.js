@@ -36,7 +36,7 @@ export default function Member() {
     }
 
     const submitClick=(e)=>{
-      e.preventDefault(); //TODO
+      e.preventDefault(); 
       const member={firstName, lastName, email, password, country, age};
       console.log(member);
       fetch("http://localhost:8080/api/member/registration",{

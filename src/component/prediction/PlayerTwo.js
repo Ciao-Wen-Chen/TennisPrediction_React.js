@@ -13,7 +13,9 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
     }
     const cellBoxStyle = { padding: '10px 50px 60px' , textAlign: 'left', fontFamily:'Varela Round'}
     const cellPaperStyle = { padding:'0px 20px 30px', margin:'10px auto' }
-
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      };
     return (
         <div className="prediction">
             <Box
@@ -25,7 +27,7 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                 
                 <br/>
                 <Paper elevation={3} style={cellPaperStyle} >
-                    <Form.Label className="label">The first letter of player's name</Form.Label>
+                    <Form.Label className="label">Player Name</Form.Label>
                         <TextInput 
                         onChange={(e) => {
                             console.log(e);
@@ -39,7 +41,8 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. Taylor Harry Fritz"
                         required
                     />
-                    <Form.Label className="label">Player II ID</Form.Label>
+                    <Form.Label className="label">Player II ID</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")}>search player ID</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -54,7 +57,8 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. 105138"
                         required
                     />
-                    <Form.Label className="label">Player II Rank</Form.Label>
+                    <Form.Label className="label">Player II Rank</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")} >&nbsp;search player Rank</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -110,9 +114,10 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                         placeholder="e.g. 181"
                         required
                     />
-                    <Form.Label className="label">Player Fatigue&nbsp;
-                        <span class="w3-tag w3-round w3-green w3-border w3-border-white">premium</span><br></br>
-                        <span style={{"color":"grey"}}>(We will check the set number of each match the player took last five match)</span>
+                    <Form.Label className="label">Number of sets that the Player took on last match&nbsp;
+                        <span class="w3-tag w3-round w3-green w3-border w3-border-white">premium</span>
+                        <br></br>
+                        <span style={{"color":"grey"}}>(Input 0 if you want to skip this factor)</span>
                     </Form.Label>
                         <TextInput 
                         type="number"

@@ -14,6 +14,10 @@ import Root from './component/root/Root';
 import Login from './component/member/Login';
 import RequireAuth from './component/RequireAuth';
 import PeudoCase from './component/prediction/PeudoCase';
+import PlayerIDTable from './component/prediction/PlayerIDTable';
+import PlayerRanking from './component/DataTable/PlayerRanking';
+import Data from './component/DataTable/Data'
+
 
 export const ROLES = {
   "USER":200,
@@ -34,6 +38,9 @@ function App() {
           <Route exact path="/member/confirm" element={<Confirm />} />
           <Route exact path="/pseudo" element={<PeudoCase />} />
           <Route exact path="/prediction-trial" element={<BetaPrediction />} />
+          <Route exact path="/data" element={<Data />} />
+
+
 
           {/* member */}
           <Route element={ <RequireAuth allowedRoles={[ ROLES.MEMBER_ROLE ]} />}>

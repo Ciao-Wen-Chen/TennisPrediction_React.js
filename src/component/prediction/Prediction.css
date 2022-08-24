@@ -385,3 +385,27 @@ body{
   transform: translateY(-2px);
 }
 
+
+.tag {
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#525252;
+	font-family:'Varela Round';
+	font-size:15px;
+	padding:0px 11px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.tag:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.tag:active {
+	position:relative;
+	top:1px;
+}
+

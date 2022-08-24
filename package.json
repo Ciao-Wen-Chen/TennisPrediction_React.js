@@ -16,11 +16,13 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
+    "jquery": "^3.6.0",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-async": "^10.0.1",
     "react-autocomplete": "^1.8.1",
     "react-bootstrap": "^2.4.0",
+    "react-data-table-component": "^7.5.2",
     "react-dom": "^18.2.0",
     "react-meta-tags": "^1.0.1",
     "react-pro-sidebar": "^0.7.1",
@@ -30,6 +32,7 @@
     "react-select-country-list": "^2.2.3",
     "react-spinners": "^0.13.4",
     "sass": "^1.54.3",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

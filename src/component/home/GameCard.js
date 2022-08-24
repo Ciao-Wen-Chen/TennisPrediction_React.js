@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import liveSummary from './LiveSummary.json'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -6,7 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import './GameCard.css';
-
+import ScoreTable from './ScoreTable';
 const bull = (
     <Box
       component="span"
@@ -16,8 +16,25 @@ const bull = (
     </Box>
   );
 
+const dealWithTimeFormat =(input)=>{
+  let tem = input.split('T');
+  return tem[0] + ' '+ tem[1].split('+')[0] + ' GMT'
+}
+
+const learMoreClickHandler=()=>{
+  const modal = document.querySelector(".modal")
+      const closeBtn = document.querySelector(".close")
+      modal.style.display = "block";
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      })
+}
+
 export default function GameCard( {row} ) {
+
+
   return (
+    <>
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <p className="smallTitle">
@@ -26,6 +43,8 @@ export default function GameCard( {row} ) {
           
         </p>
         <p className="title"> {row.gameName} </p>
+        <p className="time"> {dealWithTimeFormat(row.gameStartTime) } </p>
+
         <p className="player"> {row.p1} </p>
         <p className="info"> {row.p1Country}{bull}{row.p1Qualifier} </p>
 
@@ -34,8 +53,25 @@ export default function GameCard( {row} ) {
 
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="small" onClick={learMoreClickHandler} >Learn More</Button>
       </CardActions>
     </Card>
+    <div class="modal">
+      <div class="modal_content">
+          <span class="close">&times;</span>
+          <div class="notifyFont">
+          <tr>
+            <li>Home Score: {row.homeScores}</li>
+            <li>Away Score: {row.awayScores}</li>
+            <li>Who Is Sever: {row.serving}</li>
+            <li>Last Point: {row.last_point_result}</li>
+            <li>Tie Break: {row.tie_break}</li>
+          </tr>
+          </div>
+      </div>
+    </div>
+    </>
   );
 }
+
+// item.homeScores, item.awayScores, item.serving, item.last_point_result, item.tie_break

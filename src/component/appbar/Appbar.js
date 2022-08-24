@@ -52,7 +52,7 @@ export default function Appbar() {
     }
   }
   const accountIcon={ position:"relative",float:"right"}
-
+  const titleFont={fontFamily:"Varela Round", fontSize:"22px",fontWeight: "bold"}
   return (
     <Box sx={{ flexGrow: 1}}>
       <AppBar position="static">
@@ -76,7 +76,7 @@ export default function Appbar() {
               id="basic-button"
               color="inherit"
               href="/home"
-              style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
+              style={titleFont}
             >
               In-Play
             </Button>
@@ -87,7 +87,7 @@ export default function Appbar() {
               id="basic-button"
               color="inherit"
               href="/prediction-trial"
-              style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
+              style={titleFont}
             >
               Prediction Trial
             </Button>
@@ -98,9 +98,20 @@ export default function Appbar() {
               id="basic-button"
               color="inherit"
               href="/prediction"
-              style={{fontFamily:"Varela Round", fontSize:"25px",fontWeight: "bold"}}
+              style={titleFont}
             >
               Prediction
+            </Button>
+          </div>
+
+          <div className="menubar">
+            <Button
+              id="basic-button"
+              color="inherit"
+              href="data/"
+              style={titleFont}
+            >
+              Data
             </Button>
           </div>
 

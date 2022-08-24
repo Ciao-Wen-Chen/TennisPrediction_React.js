@@ -3,10 +3,9 @@ import { Box, TextInput, Select } from '@mantine/core';
 import { Paper } from '@material-ui/core';
 import Form from 'react-bootstrap/Form';
 import '../prediction/Prediction.css'
-import player_names from '../prediction/player_list.json'
-import player_namesA from '../prediction/player_listA.json'
-import player_namesB from '../prediction/player_listB.json'
 import Selector from 'react-select'
+import playerListProvider from '../prediction/playerListProvider'
+
 
 export default function BetaPlayerOne({ formData, setFormData }) {
     const boxStyle = {
@@ -17,56 +16,13 @@ export default function BetaPlayerOne({ formData, setFormData }) {
     }
     const cellBoxStyle = { padding: '10px 50px 60px' , textAlign: 'left', fontFamily:'Varela Round'}
     const cellPaperStyle = { padding:'0px 20px 30px', margin:'10px auto' }
-   
-    // helper function from Json to array
-    function processData(match_names) {
 
-        const matches = Object.keys(match_names).map(key => { 
-          return match_names[key];
-        });
-        
-        return matches;
-    }
-
-    // let players=[]
-    // //function MyComponent() {
-    // players = useMemo(() => processData(player_names), []);
-    // //}
     const [playerName, setPlayerName] = useState('')
-
-    function PlayerSelector() {
-        const [value, setValue] = useState('')
-        const playersA = useMemo(() => processData(player_namesA), []);
-        const playersB = useMemo(() => processData(player_namesB), []);
-        console.log(processData(playersB))
-        //console.log(players)
-        // const changeHandler = e => {
-        //     setMatchName(value)
-        //     setValue(value)
-        //     setFormData({ ...formData, matchName: e.target.value, }); 
-        // }
-        // if(typeof(e) != "undefined"){
-            //if(e.startsWith("A") || e.startsWith("a")){
-        if(playerName.startsWith("A")){
-            return <Selector options={playersA} value={value.value} onChange={(value) => {
-                console.log(value["value"]);
-                setFormData({ ...formData, p1: value["value"]});
-            }} /> 
-        }else if(playerName.startsWith("B")){
-            return <Selector options={playersB} value={value.value} onChange={(value) => {
-                console.log(value["value"]);
-                setFormData({ ...formData, p1: value["value"]});
-            }} /> 
-        }
-            // return <Selector options={playersB} value={value.value} onChange={(value) => {
-            //     console.log(value["value"]);
-            //     setFormData({ ...formData, p1: value["value"]});
-            // }} /> 
-        //}
-    //}
-    }
-
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      };
     return (
+        
         <div className="prediction">
             <Box
                 sx={ boxStyle }
@@ -75,8 +31,6 @@ export default function BetaPlayerOne({ formData, setFormData }) {
             <Box sx={ cellBoxStyle }>
             <Form.Label className="titleLabel">Input Player One Information<span className="subtitle"> Step (2/3)</span></Form.Label>
                 <Paper elevation={3} style={cellPaperStyle}>
-                <br/>
-                    
                     <Form.Label className="label">Player I Name</Form.Label>
                         <TextInput 
                         onChange={(e) => {
@@ -86,13 +40,15 @@ export default function BetaPlayerOne({ formData, setFormData }) {
                             p1: e.target.value,
                             });
                             setPlayerName(e.target.value)
+                            
                         }}
                         value={formData.p1}
                         placeholder="e.g. Roberto Bautista Agut"
                         required
                     />
-                    {PlayerSelector()}
-                    <Form.Label className="label">Player I ID</Form.Label>
+                    
+                    <Form.Label className="label">Player I ID</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")} >&nbsp;search player ID</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -106,7 +62,8 @@ export default function BetaPlayerOne({ formData, setFormData }) {
                         placeholder="e.g. 105138"
                         required
                     />
-                    <Form.Label className="label">Player I Rank</Form.Label>
+                    <Form.Label className="label">Player I Rank</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")} >&nbsp;search player Rank</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
