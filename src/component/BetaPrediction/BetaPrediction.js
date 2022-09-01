@@ -14,8 +14,8 @@ export default function BetaPrediction() {
     const[step, setStep] = useState(1)
     const [formData, setFormData] = useState({
         matchName: 'Wimbledon', matchId: 0, matchSurface: 'Grass', matchLevel: 'G',
-        p1: 'Roberto Bautista Agut', p1Id: 105138, p1Rank: 19, p1Point: 1645, p1Hand: 'R', p1Height: 180, p1Fatigue: 3, p1Age: 31,
-        p2: 'Taylor Harry Fritz', p2Id: 126203, p2Rank: 40, p2Point: 1090, p2Hand: 'R', p2Height: 180, p2Fatigue: 3, p2Age: 22,
+        p1: 'Roberto Bautista Agut', p1Id: 105138, p1Rank: 19, p1Point: 1645, p1Hand: 'R', p1Height: 180, p1Fatigue: 8, p1Age: 31,
+        p2: 'Taylor Harry Fritz', p2Id: 126203, p2Rank: 40, p2Point: 1090, p2Hand: 'R', p2Height: 180, p2Fatigue: 0, p2Age: 22,
     });
     const [winner, setWinner]=useState('plauyer')
     

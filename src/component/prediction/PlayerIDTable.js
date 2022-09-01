@@ -12,11 +12,17 @@ export default function PlayerIDTable() {
     const cols=[
         {
             name: "Player Name",
-            selector: row=>row.name
+            selector: row=>row.name,
+            style: {
+                fontFamily: 'Varela Round',
+            },
         },
         {
             name: "Player ID",
-            selector: row=>row.id
+            selector: row=>row.id,
+            style: {
+                fontFamily: 'Varela Round',
+            },
         }
     ]
 
@@ -33,7 +39,7 @@ export default function PlayerIDTable() {
         
         <DataTable
             //style={{fontFamily:'Varela Round'}}
-            title="Player ID Table" 
+            //title="Player ID Table" 
             columns={cols} 
             data={filteredPlayer} 
             pagination

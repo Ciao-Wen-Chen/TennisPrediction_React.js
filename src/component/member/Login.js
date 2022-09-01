@@ -12,6 +12,9 @@ import { useLocalState } from '../util/useLocalState';
 import { useLocalUser } from '../util/useLocalUser';
 
 export default function Login() {
+  
+  localStorage.removeItem('access_token');
+  localStorage.removeItem('role');
 
   const [email, setEmail]=useState('');
   const [password, setPassword]=useState('');
@@ -24,6 +27,12 @@ export default function Login() {
     "email": email,
     "password": password
   }
+
+  // const signInHandler = () => {
+  //   // // localStorage.removeItem("access_token");
+  //   // // localStorage.removeItem("role");
+  //   window.location.href = 'member';
+  // }
 
   const submitClick=(e)=>{
     console.log("sending request")
@@ -71,9 +80,10 @@ export default function Login() {
                           setEmail(e.target.value)
                         }}/>
 
-              <TextField required id="password" label="Password"
+              <TextField required id="password" label="Password" type="password"
                         value={password} onChange={(e)=>setPassword(e.target.value)}/>
               <p>{warnMsg}</p>
+              <a className='not' href="/member">No account? Create your account here</a>
               </div>
               <Button variant="contained" onClick={submitClick} >Submit</Button>
           </Box> 

@@ -1,0 +1,15 @@
+.bigTitle{
+    font-family: 'Varela Round';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    opacity: 100%;
+}
+.back{
+    background-color: rgb(201, 204, 210);
+    border-radius: 2cm;
+    opacity: 50%;
+    width: 60%;
+    margin:0px auto;
+    margin-bottom: 10px;
+    
+}

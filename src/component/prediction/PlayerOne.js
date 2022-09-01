@@ -40,7 +40,7 @@ export default function PlayerOne({ formData, setFormData }) {
                             
                         }}
                         value={formData.p1}
-                        placeholder="e.g. Input 'R' for Roberto Bautista Agut"
+                        placeholder="e.g. Roberto Bautista Agut"
                         required
                     />
                     
@@ -74,7 +74,8 @@ export default function PlayerOne({ formData, setFormData }) {
                         placeholder="e.g. 19"
                         required
                     />
-                    <Form.Label className="label">Player I Point</Form.Label>
+                    <Form.Label className="label">Player I Point</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")} >&nbsp;search player Rank</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {
@@ -131,7 +132,7 @@ export default function PlayerOne({ formData, setFormData }) {
                             });
                         }}
                         value={formData.p1Fatigue}
-                        placeholder="e.g. 3.8"
+                        placeholder="e.g. 3"
                         required
                     />
                     <Form.Label className="label">Player Age&nbsp;

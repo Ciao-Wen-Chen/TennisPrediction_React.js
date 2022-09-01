@@ -47,25 +47,17 @@ export default function Appbar() {
       return(
       <>
       <MenuItem onClick={(event)=>handleClose("")} component={Link} to="/login">Log in</MenuItem>          
-      <MenuItem onClick={(event)=>handleClose("")} component={Link} to="/member">Register</MenuItem>
+      <MenuItem onClick={(event)=>handleClose("")} component={Link} to="/member">Sign up</MenuItem>
       </>)
     }
   }
   const accountIcon={ position:"relative",float:"right"}
   const titleFont={fontFamily:"Varela Round", fontSize:"22px",fontWeight: "bold"}
+  
   return (
     <Box sx={{ flexGrow: 1}}>
       <AppBar position="static">
         <Toolbar>
-          {/* <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            >
-            <Sidebar/>
-          </IconButton> */}
           
           <div variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <a href="/welcome"><img src="/logo.png" alt="logo" width="300"/></a>
@@ -73,32 +65,35 @@ export default function Appbar() {
 
           <div className="menubar">
             <Button
-              id="basic-button"
+              id="basic-button1"
               color="inherit"
               href="/home"
               style={titleFont}
+              // onClick={btnClickedHandler(1)}
             >
-              In-Play
+              Live score
             </Button>
           </div>
 
           <div className="menubar">
             <Button
-              id="basic-button"
+              id="basic-button2"
               color="inherit"
               href="/prediction-trial"
               style={titleFont}
+              // onClick={btnClickedHandler(2)}
             >
-              Prediction Trial
+              Free Trial
             </Button>
           </div>
 
           <div className="menubar">
             <Button
-              id="basic-button"
+              id="basic-button3"
               color="inherit"
               href="/prediction"
               style={titleFont}
+              // onClick={btnClickedHandler(3)}
             >
               Prediction
             </Button>
@@ -106,12 +101,13 @@ export default function Appbar() {
 
           <div className="menubar">
             <Button
-              id="basic-button"
+              id="basic-button4"
               color="inherit"
               href="data/"
               style={titleFont}
+              // onClick={btnClickedHandler(4)}
             >
-              Data
+              Query Data
             </Button>
           </div>
 

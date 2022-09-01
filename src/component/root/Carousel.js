@@ -48,7 +48,7 @@ function UncontrolledExample() {
                   </p>
                 </div>
                 <div class="col-sm-4">
-                <a href="/prediction" class="Btn_tryme">Try Now</a>
+                <a href="/prediction" class="Btn_tryme">Free Trial</a>
                 </div>
               </div>
               </div>
@@ -71,7 +71,7 @@ function UncontrolledExample() {
                     Track the in-play game information</p>
                 </div>
                 <div class="col-sm-4">
-                <a href="/prediction" class="Btn_tryme">Try Now</a>
+                <a href="/home" class="Btn_tryme">Trace Now</a>
               </div>
               </div>
               </div>

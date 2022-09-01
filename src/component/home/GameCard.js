@@ -31,8 +31,7 @@ const learMoreClickHandler=()=>{
 }
 
 export default function GameCard( {row} ) {
-
-
+  
   return (
     <>
     <Card sx={{ minWidth: 275 }}>
@@ -51,12 +50,23 @@ export default function GameCard( {row} ) {
         <p className="player"> {row.p2} </p>
         <p className="info"> {row.p2Country}{bull}{row.p2Qualifier} </p>
 
+        <div>
+          <p className="player">Home v.s. Away:&nbsp;
+            <span className='score'>{row.homeScores} {row.awayScores}</span></p>
+          <p className="player">Sever:&nbsp; 
+            <span className='score'>{row.serving}</span></p>
+          <p className="player">Last Point:&nbsp; 
+            <span className='score'>{row.last_point_result}</span></p>
+          <p className="player">Tie Break:&nbsp; 
+            <span className='score'>{row.tie_break}</span></p>
+        </div>
+      
       </CardContent>
-      <CardActions>
+      {/* <CardActions>
         <Button size="small" onClick={learMoreClickHandler} >Learn More</Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
-    <div class="modal">
+    {/* <div class="modal">
       <div class="modal_content">
           <span class="close">&times;</span>
           <div class="notifyFont">
@@ -69,7 +79,7 @@ export default function GameCard( {row} ) {
           </tr>
           </div>
       </div>
-    </div>
+    </div> */}
     </>
   );
 }

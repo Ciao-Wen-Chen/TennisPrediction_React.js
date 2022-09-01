@@ -3,6 +3,7 @@ import liveSummary from './LiveSummary.json'
 import GameCard from './GameCard';
 import {Paper,Grid} from '@material-ui/core';
 import axios from 'axios';
+import './Home.css'
 
 //TennHowWin
 // in home page we need to introduce the API 
@@ -38,13 +39,13 @@ export default function Home() {
             tie_break:item.sport_event_status.game_state?.tie_break,
 
         })))
-        console.log(gameSumAry)
+        //console.log("here"+gameSumAry[2].last_point_result)
     }
     
     useEffect(()=>{
         console.log('use effect')
-        //searchLiveData();
-        testData()
+        searchLiveData();
+        //testData()
 
     },[])
 
@@ -80,11 +81,11 @@ export default function Home() {
             //new
             gameStartTime: item.sport_event.start_time,//2022-07-29T13:35:00+00:00
 
-            homeScores:item.sport_event_status.game_state.home_score,
-            awayScores:item.sport_event_status.game_state.away_score,
-            serving:item.sport_event_status.game_state.serving,
-            last_point_result:item.sport_event_status.game_state.last_point_result,
-            tie_break:item.sport_event_status.game_state.tie_break,
+            homeScores: item.sport_event_status.game_state?.home_score,
+            awayScores: item.sport_event_status.game_state?.away_score,
+            serving: item.sport_event_status.game_state?.serving,
+            last_point_result: item.sport_event_status.game_state?.last_point_result,
+            tie_break: item.sport_event_status.game_state?.tie_break,
             
         })))
         console.log(liveSummary)
@@ -95,7 +96,7 @@ export default function Home() {
         gameName: string,
         p1: string,
         p1Country: string,
-        p1Qualifier: string,
+        p1Qualifier: string, 
         p2: string,
         p2Country: string,
         p2Qualifier: string,
@@ -108,19 +109,22 @@ export default function Home() {
         last_point_result:string,
         tie_break:string,
             
-        setScores: array,
     ) {
-
+        // console.log({ gameName, p1, p1Country, p1Qualifier, p2, p2Country, p2Qualifier, 
+        //     gameStartTime, 
+        //     homeScores, awayScores, serving, last_point_result, tie_break })
         return { gameName, p1, p1Country, p1Qualifier, p2, p2Country, p2Qualifier, 
                 gameStartTime, 
-                setScores, homeScores, awayScores, serving, last_point_result, tie_break };
+                homeScores, awayScores, serving, last_point_result, tie_break };
     }
 
-    const paperStyle={padding:'50px 20px', width:900, margin:'20px auto', flexGrow:1}
-
+    const paperStyle={padding:'20px 20px', width:900, margin:'20px auto', flexGrow:1}
+    
     return (
-        
         <Paper elevation={3} style={paperStyle}>
+        <div className="back">
+            <span className='bigTitle'>Live Summary of current match</span>
+        </div>
         <Grid container spacing={4}>
             { gameSumAry.map(item => (
                 <Grid item xs={4}>
@@ -129,7 +133,6 @@ export default function Home() {
                     item.gameStartTime,
                     item.homeScores, item.awayScores, item.serving, item.last_point_result, item.tie_break
                     )}/>
-                    {/* item.homeScore, item.awayScore, item.setNum */}
                 </Grid>
             )) }
         </Grid>

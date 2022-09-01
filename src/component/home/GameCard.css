@@ -29,6 +29,14 @@
     text-align: left;
     margin-bottom: 5px;
 }
+.score{
+    color: rgb(219, 0, 154);
+    font-size: 15px;
+    font-family: 'Varela Round';
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
 .info{
     color: gray;
     font-size: 15px;

@@ -23,29 +23,35 @@ export default function PlayerRanking() {
     )
     console.log(players)
     const[filteredPlayer, setfilteredPlayer] = useState(players)
-    // useEffect(()=>{
-    //     console.log('use effect')
-    //     //searchLiveData();
-    //     testData()
-    //     setfilteredPlayer(players)
-    // },[])
 
     const cols=[
         {
             name: "Rank",
-            selector: row=>row.rank
+            selector: row=>row.rank,
+            style: {
+                fontFamily: 'Varela Round',
+            },
         },
         {
             name: "Points",
-            selector: row=>row.points
+            selector: row=>row.points,
+            style: {
+                fontFamily: 'Varela Round',
+            },
         },
         {
             name: "Player Name",
-            selector: row=>row.competitor
+            selector: row=>row.competitor,
+            style: {
+                fontFamily: 'Varela Round',
+            },
         },
         {
             name: "Country",
-            selector: row=>row.country
+            selector: row=>row.country,
+            style: {
+                fontFamily: 'Varela Round',
+            },
         }
     ]
     useEffect(()=>{
@@ -62,7 +68,7 @@ export default function PlayerRanking() {
         <div style={{"width": "80%", "padding":"0 0 0 20%"}}>
         <DataTable
             //style={{fontFamily:'Varela Round'}}
-            title="ATP Ranking &nbsp;&nbsp;&#128308;Live" 
+            // title="ATP Ranking &nbsp;&nbsp;&#128308;Live" 
             columns={cols} 
             data={filteredPlayer} 
             pagination

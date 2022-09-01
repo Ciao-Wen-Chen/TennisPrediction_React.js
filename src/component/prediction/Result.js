@@ -86,7 +86,7 @@ export default function Result({p1, p2, p1WP, p2WP, formData}) {
         <div>
             <div>{optionalRender()}</div>
             <Paper elevation={2} sx={{width:"65%", margin:"100px 0px 0px 250px", background: "rgba(0,0,0,0.5)"}}>
-                <div class="titleLabelResult">&#128081; Possibilities Of Victory</div>
+                <div class="titleLabelResult">&#128081; Possibilities Of Win</div>
             </Paper>
             <Paper elevation={2} sx={{width:"65%", margin:"10px 0px 0px 250px", background: "rgba(0,0,0,0.5)"}}>
                 <div class="row">

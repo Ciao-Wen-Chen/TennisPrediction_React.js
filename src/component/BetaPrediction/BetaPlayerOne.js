@@ -76,7 +76,8 @@ export default function BetaPlayerOne({ formData, setFormData }) {
                         placeholder="e.g. 19"
                         required
                     />
-                    <Form.Label className="label">Player I Point</Form.Label>
+                    <Form.Label className="label">Player I Point</Form.Label>&nbsp;
+                    <span class="tag" onClick={() => openInNewTab("data")} >&nbsp;search player Point</span><br></br>
                         <TextInput 
                         type="number"
                         onChange={(e) => {

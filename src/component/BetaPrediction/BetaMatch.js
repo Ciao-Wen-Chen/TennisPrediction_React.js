@@ -47,7 +47,7 @@ export default function BetaMatch({ formData, setFormData }) {
         <Form.Label className="titleLabel">Input Match Information<span className="subtitle"> Step (1/3) </span></Form.Label>
         <Paper elevation={3} style={cellPaperStyle}>
             <Form.Label className="label">The Tournament Name</Form.Label>
-            {/* https://react-select.com/home */}
+            {/* https://react-select.com/home
                 <TextInput 
                 onChange={(e) => {
                     setFormData({
@@ -58,7 +58,7 @@ export default function BetaMatch({ formData, setFormData }) {
                 value={formData.matchName}
                 placeholder="e.g. Wimbledon"
                 required
-            />
+            /> */}
             {MatchesSelector()}
             
             <Form.Label className="label">Choose Court Surface Type</Form.Label>
@@ -76,23 +76,6 @@ export default function BetaMatch({ formData, setFormData }) {
                     value={ formData.matchSurface }
                     placeholder="e.g. Grass"
             />
-            {/* <Form.Label className="label">Choose Tournament Level</Form.Label>
-                <Select className="selectItem"
-                    data={[
-                    { value: 'A', label: 'A' },
-                    { value: 'C', label: 'C' },
-                    { value: 'D', label: 'D' },
-                    { value: 'F', label: 'F' },
-                    { value: 'G', label: 'G' },
-                    { value: 'M', label: 'M' },
-                    ]}
-                    onChange={(e) => {
-                        console.log(e);
-                        setFormData({ ...formData, matchLevel: e });
-                    }}
-                    value={ formData.matchLevel }
-                    placeholder="e.g. G"
-            /> */}
             </Paper>
         </Box>
         </Paper>

@@ -57,7 +57,7 @@ export default function Match({ formData, setFormData }) {
         <Form.Label className="titleLabel">Input Match Information<span className="subtitle"> Step (1/3) </span></Form.Label>
         <Paper elevation={3} style={cellPaperStyle}>
             <Form.Label className="label">The Tournament Name</Form.Label>
-            {/* https://react-select.com/home */}
+            {/* https://react-select.com/home
                 <TextInput 
                 onChange={(e) => {
                     setFormData({
@@ -68,7 +68,7 @@ export default function Match({ formData, setFormData }) {
                 value={formData.matchName}
                 placeholder="e.g. Wimbledon"
                 required
-            />
+            /> */}
             {MatchesSelector()}
             
             <Form.Label className="label">Choose Court Surface Type</Form.Label>

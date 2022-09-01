@@ -39,6 +39,7 @@ function App() {
           <Route exact path="/pseudo" element={<PeudoCase />} />
           <Route exact path="/prediction-trial" element={<BetaPrediction />} />
           <Route exact path="/data" element={<Data />} />
+          <Route exact path="/confirm" element={<Confirm />} />
 
 
 

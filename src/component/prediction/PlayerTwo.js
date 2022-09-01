@@ -128,7 +128,7 @@ export default function PlayerTwo({ formData, setFormData, winner }) {
                             });
                         }}
                         value={formData.p2Fatigue}
-                        placeholder="e.g. 3.8"
+                        placeholder="e.g. 3"
                         required
                     />
                     <Form.Label className="label">Player Age&nbsp;

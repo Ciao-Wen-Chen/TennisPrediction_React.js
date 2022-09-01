@@ -2,8 +2,12 @@
     min-height: 100vh;
     font-family: 'Varela Round';
 }
+.not{
+    font-family: 'Varela Round';
+    color: #232e4d
+}
 p {
-    font-family: proxima-soft, sans-serif;
+    font-family: 'Varela Round';
     font-style: normal;
     font-weight: 500;
     color: #ff4a4a
@@ -25,11 +29,10 @@ p {
 .modal_content {
     background-color: white;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 40%;
     height: 25%;
     width: 20%;
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
     border-radius:10px;
     text-align: center;
     
@@ -46,9 +49,9 @@ p {
     
 }
 .notifyFont{
-    margin-top: 10%;
-    margin-right: 15%;
-    margin-left: 15%;
+    /* margin-top: 10%;
+    margin-right: 10px; */
+    /* margin-left: 15%; */
     font-family: 'Varela Round';
     font-weight: bold;
     color: #263d79

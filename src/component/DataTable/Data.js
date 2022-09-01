@@ -48,8 +48,8 @@ export default function Data() {
     <>
     <div className='data'>
         <div style={{margin:"0 0 0 0", padding:"0 0 0 0"}}>
-        <span class="myButton" id="btn1" onClick={ handleStep1 }>Player ID Table</span>
-        <span class="myButton" id="btn2" onClick={ handleStep2 }>ATP Ranking Table</span>
+        <span class="myButton" id="btn1" onClick={ handleStep1 }>Player ID and Name</span>
+        <span class="myButton" id="btn2" onClick={ handleStep2 }>ATP Live &#128308; Ranking</span>
         </div>
         {conditionalComponent()}
     </div>

@@ -28,26 +28,31 @@ export default function Confirm() {
         });
     },[]);
 
+    const notifyFont={"textAlign":"center"}
     const conditionalRender=()=>{
         if(emailVerifyState==="confirmed"){
             return(
                 <div class="modal_content">
-                    <div class="notifyFont">
+                    <div class="notifyFont" style={notifyFont}>
                         Congrats! You can start your journey now 
                         Please Log in.
                     </div>
+                    <br></br>
+                    <div class="btn_login" style={notifyFont}>
                     <a href="/login" class="myButton">Log in</a>
+                    </div>
                 </div>
             )
         }else{
             return(
                 <div class="modal_content">
-                    <div class="notifyFont">
+                    <div class="notifyFont" style={notifyFont}>
                         Congrats! You can start your journey now, <br></br> 
                         Please Log in.
                         
                     </div>
-                    <div class="btn_login" style={{position:"relative",marginRight:"8%"}}>
+                    <br></br>
+                    <div class="btn_login" style={notifyFont}>
                         <a href="/login" class="myButton">Log in</a>
                     </div>
                     

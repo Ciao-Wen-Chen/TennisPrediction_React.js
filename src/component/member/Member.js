@@ -1,5 +1,5 @@
 import * as React from 'react';
-import{useState, useMemo} from 'react';
+import{useState, useMemo, useEffect} from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import {Container,Paper,Button,FormHelperText} from '@material-ui/core';
@@ -13,6 +13,15 @@ import {useNavigate} from 'react-router-dom'
 
 
 export default function Member() {
+
+  localStorage.removeItem('access_token');
+  localStorage.removeItem('role');
+
+   // const signInHandler = () => {
+  //   // // localStorage.removeItem("access_token");
+  //   // // localStorage.removeItem("role");
+  //   window.location.href = 'member';
+  // }
 
     const paperStyle={padding:'50px 20px', width:600, margin:'20px auto'}
     const[firstName, setFirstName] = useState('');
@@ -91,8 +100,8 @@ export default function Member() {
                   }}/>
         <p>{error}</p>
 
-        <TextField required id="password" label="Password"
-                  value={password} onChange={(e)=>setPassword(e.target.value)}/>
+        <TextField required id="password" label="Password"  type="password"
+                  value={password} onChange={(e)=>setPassword(e.target.value)} />
         <div style={{width:"72%" ,margin:"0px 0px 0px 80px"}}>
           {CountrySelector()}
         </div>

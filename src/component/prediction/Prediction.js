@@ -53,9 +53,7 @@ export default function Prediction() {
                     <div class="arrowR"></div>
                 </div>
                 </div>
-                // <Button variant="contained" onClick={ handlePrev }>
-                //     Back
-                // </Button>
+              
             )
         }
     }
